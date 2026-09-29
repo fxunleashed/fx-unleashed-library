@@ -1,0 +1,28 @@
+name: Validate library
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      # every item: files, sizes, ids, sha256, dash format, no scripts, previews 800x480; index.json up to date
+      - name: Check items and index
+        run: python tools/build_index.py --check
+      # a pull request may only add or change items in their own folders (and index.json)
+      - name: Only item folders changed
+        if: github.event_name == 'pull_request'
+        run: |
+          git fetch --no-tags --depth=1 origin "${{ github.base_ref }}"
+          bad=$(git diff --name-only "origin/${{ github.base_ref }}"...HEAD | grep -Ev '^(dashes|savers)/[a-z0-9-]+/(dash\.json|meta\.json|preview\.png)$|^index\.json$' || true)
+          if [ -n "$bad" ]; then echo "Only item folders and index.json may change in a submission:"; echo "$bad"; exit 1; fi

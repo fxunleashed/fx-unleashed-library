@@ -1,0 +1,120 @@
+{
+ "Schema": 1,
+ "Generated": "2026-09-29T20:27:40Z",
+ "Items": [
+  {
+   "Id": "stint",
+   "Kind": "dash",
+   "Name": "Stint",
+   "Author": "FX Unleashed",
+   "Description": "Endurance: big gear, delta with a bar, lap times, fuel with laps left, TC / ABS / MAP. Brake bias pops up when you change it.",
+   "Version": "1.0.0",
+   "Games": [
+    "LMU",
+    "IRacing",
+    "AssettoCorsaCompetizione",
+    "RFactor2"
+   ],
+   "Cars": [],
+   "Tags": [
+    "endurance",
+    "gt",
+    "prototype",
+    "fuel"
+   ],
+   "License": "CC-BY-4.0",
+   "Created": "2026-09-29",
+   "Updated": "2026-09-29",
+   "FormatVersion": 2,
+   "MinPlugin": "0.3.0-beta.1",
+   "BytesStatic": 1239,
+   "BytesPerSecond": 410,
+   "Sha256": "563d51108afe668c2b938f9fab9be60e9501836ea649e2786d484baa86e7bf1a",
+   "DashUrl": "dashes/stint/dash.json",
+   "PreviewUrl": "dashes/stint/preview.png"
+  },
+  {
+   "Id": "paddock-clock",
+   "Kind": "saver",
+   "Name": "Paddock clock",
+   "Author": "FX Unleashed",
+   "Description": "A big clock and the date between sessions, on black with a red stripe.",
+   "Version": "1.0.0",
+   "Games": [],
+   "Cars": [],
+   "Tags": [
+    "clock",
+    "minimal"
+   ],
+   "License": "CC-BY-4.0",
+   "Created": "2026-09-29",
+   "Updated": "2026-09-29",
+   "FormatVersion": 2,
+   "MinPlugin": "0.3.0-beta.1",
+   "BytesStatic": 122,
+   "BytesPerSecond": 1,
+   "Sha256": "3c0eaf2f9d56e34deabfe45531b6008ac00d38d2901ffa6087a058134df1b5c8",
+   "DashUrl": "savers/paddock-clock/dash.json",
+   "PreviewUrl": "savers/paddock-clock/preview.png"
+  },
+  {
+   "Id": "night",
+   "Kind": "dash",
+   "Name": "Night",
+   "Author": "FX Unleashed",
+   "Description": "Low glare for night stints: dim red on black, only what you need. Goes well with night mode.",
+   "Version": "1.0.0",
+   "Games": [
+    "LMU",
+    "IRacing",
+    "AssettoCorsaCompetizione"
+   ],
+   "Cars": [],
+   "Tags": [
+    "endurance",
+    "night",
+    "low-glare"
+   ],
+   "License": "CC-BY-4.0",
+   "Created": "2026-09-29",
+   "Updated": "2026-09-29",
+   "FormatVersion": 2,
+   "MinPlugin": "0.3.0-beta.1",
+   "BytesStatic": 402,
+   "BytesPerSecond": 830,
+   "Sha256": "1841d6013320f2f288c96c4e3658fc27778bd8f8f94a3ff037f91d11e01e03d0",
+   "DashUrl": "dashes/night/dash.json",
+   "PreviewUrl": "dashes/night/preview.png"
+  },
+  {
+   "Id": "apex",
+   "Kind": "dash",
+   "Name": "Apex",
+   "Author": "FX Unleashed",
+   "Description": "Sprint: huge gear, RPM bar that turns amber and red, a big delta with a wide bar, current and best lap.",
+   "Version": "1.0.0",
+   "Games": [
+    "IRacing",
+    "AssettoCorsaCompetizione",
+    "AssettoCorsa",
+    "Automobilista2"
+   ],
+   "Cars": [],
+   "Tags": [
+    "sprint",
+    "minimal",
+    "shift"
+   ],
+   "License": "CC-BY-4.0",
+   "Created": "2026-09-29",
+   "Updated": "2026-09-29",
+   "FormatVersion": 2,
+   "MinPlugin": "0.3.0-beta.1",
+   "BytesStatic": 399,
+   "BytesPerSecond": 1111,
+   "Sha256": "115400cf5074844769dafc655bba04a8db299551377746aac3cfe5759fd26ec5",
+   "DashUrl": "dashes/apex/dash.json",
+   "PreviewUrl": "dashes/apex/preview.png"
+  }
+ ]
+}

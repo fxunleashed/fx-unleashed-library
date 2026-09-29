@@ -1,0 +1,5 @@
+# dash.json is checked against the sha256 in meta.json / index.json: never let git change its line endings
+dashes/**/dash.json -text
+savers/**/dash.json -text
+*.png binary
+index.json text eol=lf

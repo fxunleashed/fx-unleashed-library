@@ -1,0 +1,28 @@
+{
+  "Id": "apex",
+  "Kind": "dash",
+  "Name": "Apex",
+  "Author": "FX Unleashed",
+  "Description": "Sprint: huge gear, RPM bar that turns amber and red, a big delta with a wide bar, current and best lap.",
+  "Version": "1.0.0",
+  "Games": [
+    "IRacing",
+    "AssettoCorsaCompetizione",
+    "AssettoCorsa",
+    "Automobilista2"
+  ],
+  "Cars": [],
+  "Tags": [
+    "sprint",
+    "minimal",
+    "shift"
+  ],
+  "License": "CC-BY-4.0",
+  "Created": "2026-09-29",
+  "Updated": "2026-09-29",
+  "FormatVersion": 2,
+  "MinPlugin": "0.3.0-beta.1",
+  "BytesStatic": 399,
+  "BytesPerSecond": 1111,
+  "Sha256": "115400cf5074844769dafc655bba04a8db299551377746aac3cfe5759fd26ec5"
+}

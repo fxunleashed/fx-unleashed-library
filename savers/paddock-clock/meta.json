@@ -1,0 +1,22 @@
+{
+  "Id": "paddock-clock",
+  "Kind": "saver",
+  "Name": "Paddock clock",
+  "Author": "FX Unleashed",
+  "Description": "A big clock and the date between sessions, on black with a red stripe.",
+  "Version": "1.0.0",
+  "Games": [],
+  "Cars": [],
+  "Tags": [
+    "clock",
+    "minimal"
+  ],
+  "License": "CC-BY-4.0",
+  "Created": "2026-09-29",
+  "Updated": "2026-09-29",
+  "FormatVersion": 2,
+  "MinPlugin": "0.3.0-beta.1",
+  "BytesStatic": 122,
+  "BytesPerSecond": 1,
+  "Sha256": "3c0eaf2f9d56e34deabfe45531b6008ac00d38d2901ffa6087a058134df1b5c8"
+}

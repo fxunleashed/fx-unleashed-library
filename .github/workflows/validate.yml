@@ -19,6 +19,9 @@ jobs:
       # every item: files, sizes, ids, sha256, dash format, no scripts, previews 800x480; index.json up to date
       - name: Check items and index
         run: python tools/build_index.py --check
+      # cars/: the per-car light data (published by the maintainers' extraction tools, not by pull requests)
+      - name: Check car data
+        run: python tools/check_cars.py
       # a pull request may only add or change items in their own folders (and index.json)
       - name: Only item folders changed
         if: github.event_name == 'pull_request'

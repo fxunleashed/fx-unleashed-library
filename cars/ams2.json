@@ -4,7 +4,7 @@
  "simhubGame": "Automobilista2",
  "schema": 1,
  "game": "ams2",
- "updated": "2026-09-30T05:36:02+00:00",
+ "updated": "2026-09-30T07:15:33+00:00",
  "count": 466,
  "cars": [
   {
@@ -33,8 +33,108 @@
    "classId": "LMDh",
    "year": 2024,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     9000
+    ],
+    "steps": 75,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6081,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1111,
+      "stages": [
+       [
+        6324,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2222,
+      "stages": [
+       [
+        6568,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3333,
+      "stages": [
+       [
+        6811,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4444,
+      "stages": [
+       [
+        7054,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5556,
+      "stages": [
+       [
+        7419,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6667,
+      "stages": [
+       [
+        7905,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7778,
+      "stages": [
+       [
+        8149,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8889,
+      "stages": [
+       [
+        8392,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        8635,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "layout": "step-order",
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -49,8 +149,108 @@
    "classId": "LMDh_LD",
    "year": 2024,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     9000
+    ],
+    "steps": 75,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6081,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1111,
+      "stages": [
+       [
+        6324,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2222,
+      "stages": [
+       [
+        6568,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3333,
+      "stages": [
+       [
+        6811,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4444,
+      "stages": [
+       [
+        7054,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5556,
+      "stages": [
+       [
+        7419,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6667,
+      "stages": [
+       [
+        7905,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7778,
+      "stages": [
+       [
+        8149,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8889,
+      "stages": [
+       [
+        8392,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        8635,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "layout": "step-order",
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -3543,8 +3743,109 @@
    "classId": "GT3",
    "year": 2017,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     7000
+    ],
+    "steps": 32,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        5419,
+        "#41FF00"
+       ],
+       [
+        6774,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0585,
+      "stages": [
+       [
+        5419,
+        "#41FF00"
+       ],
+       [
+        6774,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1222,
+      "stages": [
+       [
+        5419,
+        "#41FF00"
+       ],
+       [
+        6774,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1817,
+      "stages": [
+       [
+        5871,
+        "#00A1FF"
+       ],
+       [
+        6774,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8183,
+      "stages": [
+       [
+        5871,
+        "#00A1FF"
+       ],
+       [
+        6774,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8778,
+      "stages": [
+       [
+        6323,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9394,
+      "stages": [
+       [
+        6323,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6323,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": {
     "onBar": false,
     "colour": "#00A1FF",
@@ -3861,12 +4162,125 @@
    "classId": "Hypercars",
    "year": 2018,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     8000
+    ],
+    "steps": 80,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6481,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1422,
+      "stages": [
+       [
+        6987,
+        "#41FF00"
+       ],
+       [
+        7190,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2796,
+      "stages": [
+       [
+        7190,
+        "#FF4D01"
+       ],
+       [
+        7494,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4265,
+      "stages": [
+       [
+        7494,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5735,
+      "stages": [
+       [
+        7494,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7156,
+      "stages": [
+       [
+        7190,
+        "#FF4D01"
+       ],
+       [
+        7494,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8578,
+      "stages": [
+       [
+        6987,
+        "#41FF00"
+       ],
+       [
+        7190,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6481,
+        "#41FF00"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": {
-    "onBar": false,
-    "colour": "#00A1FF",
-    "lights": 4
+    "onBar": true,
+    "leds": [
+     {
+      "pos": 0.1422,
+      "colour": "#FF4D01"
+     },
+     {
+      "pos": 0.2796,
+      "colour": "#00A1FF"
+     },
+     {
+      "pos": 0.7156,
+      "colour": "#00A1FF"
+     },
+     {
+      "pos": 0.8578,
+      "colour": "#FF4D01"
+     }
+    ]
    },
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -4456,8 +4870,66 @@
    "classId": "GT4",
    "year": 2019,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     7000
+    ],
+    "steps": 70,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        5478,
+        "#41FF00"
+       ],
+       [
+        6493,
+        "#FF2B00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2525,
+      "stages": [
+       [
+        5681,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.495,
+      "stages": [
+       [
+        5884,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7475,
+      "stages": [
+       [
+        6087,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6290,
+        "#41FF00"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -4488,8 +4960,98 @@
    "classId": "World_GT_Challenge",
    "year": 2018,
    "source": "mod",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     7000
+    ],
+    "steps": 80,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        5671,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1404,
+      "stages": [
+       [
+        5671,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2829,
+      "stages": [
+       [
+        5671,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4298,
+      "stages": [
+       [
+        5848,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.568,
+      "stages": [
+       [
+        5848,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7127,
+      "stages": [
+       [
+        5848,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8575,
+      "stages": [
+       [
+        6025,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9912,
+      "stages": [
+       [
+        6025,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6025,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -6154,8 +6716,62 @@
    "classId": "RX",
    "year": 2017,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     8600
+    ],
+    "steps": 36,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6634,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.047,
+      "stages": [
+       [
+        6880,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0953,
+      "stages": [
+       [
+        7126,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9517,
+      "stages": [
+       [
+        7371,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        7617,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -6186,8 +6802,144 @@
    "classId": "Montana",
    "year": 2017,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     6000
+    ],
+    "steps": 56,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        4909,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0769,
+      "stages": [
+       [
+        4909,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1538,
+      "stages": [
+       [
+        5127,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2308,
+      "stages": [
+       [
+        5127,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3077,
+      "stages": [
+       [
+        5345,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3846,
+      "stages": [
+       [
+        5345,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4615,
+      "stages": [
+       [
+        5564,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5385,
+      "stages": [
+       [
+        5564,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6154,
+      "stages": [
+       [
+        5782,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6923,
+      "stages": [
+       [
+        5782,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7692,
+      "stages": [
+       [
+        6000,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8462,
+      "stages": [
+       [
+        6000,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9231,
+      "stages": [
+       [
+        6000,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6000,
+        "#05AEFF"
+       ]
+      ]
+     }
+    ],
+    "layout": "step-order",
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -7374,8 +8126,109 @@
    "classId": "World_GT_Challenge",
    "year": 2019,
    "source": "mod",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     8000
+    ],
+    "steps": 32,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        5419,
+        "#41FF00"
+       ],
+       [
+        6194,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0585,
+      "stages": [
+       [
+        5419,
+        "#41FF00"
+       ],
+       [
+        6194,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1222,
+      "stages": [
+       [
+        5419,
+        "#41FF00"
+       ],
+       [
+        6194,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1817,
+      "stages": [
+       [
+        5677,
+        "#00A1FF"
+       ],
+       [
+        6194,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8183,
+      "stages": [
+       [
+        5677,
+        "#00A1FF"
+       ],
+       [
+        6194,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8778,
+      "stages": [
+       [
+        5935,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9394,
+      "stages": [
+       [
+        5935,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        5935,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -7406,8 +8259,26 @@
    "classId": "GT1_05",
    "year": 2005,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     8000
+    ],
+    "steps": 108,
+    "leds": [
+     {
+      "pos": 0.5,
+      "stages": [
+       [
+        6654,
+        "#FFAA06"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -7422,8 +8293,26 @@
    "classId": "GT1_05_LD",
    "year": 2005,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     8000
+    ],
+    "steps": 108,
+    "leds": [
+     {
+      "pos": 0.5,
+      "stages": [
+       [
+        6654,
+        "#FFAA06"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -7438,8 +8327,26 @@
    "classId": "Street B",
    "year": 2010,
    "source": "mod",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     6500
+    ],
+    "steps": 43,
+    "leds": [
+     {
+      "pos": 0.5,
+      "stages": [
+       [
+        5881,
+        "#FF6008"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -7454,8 +8361,107 @@
    "classId": "Street B",
    "year": 2007,
    "source": "mod",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     8650
+    ],
+    "steps": 64,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        7414,
+        "#FF0600"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0595,
+      "stages": [
+       [
+        7826,
+        "#FF0600"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1243,
+      "stages": [
+       [
+        8101,
+        "#FF0600"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1892,
+      "stages": [
+       [
+        8375,
+        "#FF0600"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2541,
+      "stages": [
+       [
+        8513,
+        "#FF0600"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7459,
+      "stages": [
+       [
+        8513,
+        "#FF0600"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8108,
+      "stages": [
+       [
+        8375,
+        "#FF0600"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8757,
+      "stages": [
+       [
+        8101,
+        "#FF0600"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9405,
+      "stages": [
+       [
+        7826,
+        "#FF0600"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        7414,
+        "#FF0600"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -7806,8 +8812,80 @@
    "classId": "Track Day A",
    "year": 2015,
    "source": "mod",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     9000
+    ],
+    "steps": 72,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        7479,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1595,
+      "stages": [
+       [
+        7732,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3252,
+      "stages": [
+       [
+        7986,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5031,
+      "stages": [
+       [
+        8239,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6687,
+      "stages": [
+       [
+        8493,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8405,
+      "stages": [
+       [
+        8746,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        9000,
+        "#05AEFF"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -7822,8 +8900,80 @@
    "classId": "Hypercars",
    "year": 2015,
    "source": "mod",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     9000
+    ],
+    "steps": 72,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        7479,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1595,
+      "stages": [
+       [
+        7732,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3252,
+      "stages": [
+       [
+        7986,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5031,
+      "stages": [
+       [
+        8239,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6687,
+      "stages": [
+       [
+        8493,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8405,
+      "stages": [
+       [
+        8746,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        9000,
+        "#FF4D00"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -7870,8 +9020,89 @@
    "classId": "World_GT_Challenge",
    "year": 2015,
    "source": "mod",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     8000
+    ],
+    "steps": 67,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6545,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0493,
+      "stages": [
+       [
+        6545,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1,
+      "stages": [
+       [
+        6545,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.149,
+      "stages": [
+       [
+        6788,
+        "#FFBE12"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8515,
+      "stages": [
+       [
+        6788,
+        "#FFBE12"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9004,
+      "stages": [
+       [
+        7030,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9497,
+      "stages": [
+       [
+        7030,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        7030,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -8254,8 +9485,107 @@
    "classId": "F-Dirt",
    "year": 2023,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     7000
+    ],
+    "steps": 70,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        5884,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0884,
+      "stages": [
+       [
+        5986,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1738,
+      "stages": [
+       [
+        6087,
+        "#FFBE12"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2607,
+      "stages": [
+       [
+        6188,
+        "#FFBE12"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3476,
+      "stages": [
+       [
+        6391,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6539,
+      "stages": [
+       [
+        6391,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7393,
+      "stages": [
+       [
+        6188,
+        "#FFBE12"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8262,
+      "stages": [
+       [
+        6087,
+        "#FFBE12"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9131,
+      "stages": [
+       [
+        5986,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        5884,
+        "#41FF00"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -8494,8 +9824,134 @@
    "classId": "F-Inter",
    "year": 2015,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     7100
+    ],
+    "steps": 71,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        5477,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0822,
+      "stages": [
+       [
+        5579,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1676,
+      "stages": [
+       [
+        5680,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2497,
+      "stages": [
+       [
+        5781,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3341,
+      "stages": [
+       [
+        5883,
+        "#FFBE12"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4173,
+      "stages": [
+       [
+        5984,
+        "#FFBE12"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5005,
+      "stages": [
+       [
+        6086,
+        "#FFBE12"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5849,
+      "stages": [
+       [
+        6187,
+        "#FFBE12"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6692,
+      "stages": [
+       [
+        6289,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7503,
+      "stages": [
+       [
+        6390,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8335,
+      "stages": [
+       [
+        6491,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9189,
+      "stages": [
+       [
+        6593,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6694,
+        "#00A1FF"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -8638,8 +10094,89 @@
    "classId": "F-Trainer_A",
    "year": 2012,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     8000
+    ],
+    "steps": 67,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6303,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0512,
+      "stages": [
+       [
+        6303,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1013,
+      "stages": [
+       [
+        6303,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1476,
+      "stages": [
+       [
+        6545,
+        "#FFBE12"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8508,
+      "stages": [
+       [
+        6545,
+        "#FFBE12"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8987,
+      "stages": [
+       [
+        6788,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9482,
+      "stages": [
+       [
+        6788,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6788,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": {
     "onBar": false,
     "colour": "#41FF00",
@@ -12185,8 +13722,134 @@
    "classId": "F-Vee_Gen2",
    "year": 2025,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     7100
+    ],
+    "steps": 71,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        3449,
+        "#0990FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0842,
+      "stages": [
+       [
+        4057,
+        "#0990FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1652,
+      "stages": [
+       [
+        4666,
+        "#FFA700"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2495,
+      "stages": [
+       [
+        5274,
+        "#FFA700"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3342,
+      "stages": [
+       [
+        5781,
+        "#FF0E00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4163,
+      "stages": [
+       [
+        6289,
+        "#FF0E00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5005,
+      "stages": [
+       [
+        6491,
+        "#FF0E00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5848,
+      "stages": [
+       [
+        6289,
+        "#FF0E00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6679,
+      "stages": [
+       [
+        5781,
+        "#FF0E00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7495,
+      "stages": [
+       [
+        5274,
+        "#FFA700"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8337,
+      "stages": [
+       [
+        4666,
+        "#FFA700"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9168,
+      "stages": [
+       [
+        4057,
+        "#0990FF"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        3449,
+        "#0990FF"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -12505,8 +14168,89 @@
    "classId": "GTOpen",
    "year": 2017,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     9000
+    ],
+    "steps": 36,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6943,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0596,
+      "stages": [
+       [
+        6943,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1213,
+      "stages": [
+       [
+        6943,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.184,
+      "stages": [
+       [
+        7457,
+        "#FFAA06"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8191,
+      "stages": [
+       [
+        7457,
+        "#FFAA06"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8787,
+      "stages": [
+       [
+        7714,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9404,
+      "stages": [
+       [
+        7714,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        7714,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -12649,8 +14393,129 @@
    "classId": "G55Supercup",
    "year": 2017,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     7000
+    ],
+    "steps": 70,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6290,
+        "#41FF00"
+       ],
+       [
+        6493,
+        "#FFBE12"
+       ],
+       [
+        6696,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1404,
+      "stages": [
+       [
+        6391,
+        "#41FF00"
+       ],
+       [
+        6493,
+        "#FFBE12"
+       ],
+       [
+        6696,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2825,
+      "stages": [
+       [
+        6493,
+        "#FFBE12"
+       ],
+       [
+        6696,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4316,
+      "stages": [
+       [
+        6594,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5719,
+      "stages": [
+       [
+        6594,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.714,
+      "stages": [
+       [
+        6493,
+        "#FFBE12"
+       ],
+       [
+        6696,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8632,
+      "stages": [
+       [
+        6391,
+        "#41FF00"
+       ],
+       [
+        6493,
+        "#FFBE12"
+       ],
+       [
+        6696,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6290,
+        "#41FF00"
+       ],
+       [
+        6493,
+        "#FFBE12"
+       ],
+       [
+        6696,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -12665,8 +14530,129 @@
    "classId": "P1",
    "year": 2016,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     7000
+    ],
+    "steps": 70,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6290,
+        "#41FF00"
+       ],
+       [
+        6493,
+        "#FFBE12"
+       ],
+       [
+        6696,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1404,
+      "stages": [
+       [
+        6391,
+        "#41FF00"
+       ],
+       [
+        6493,
+        "#FFBE12"
+       ],
+       [
+        6696,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2825,
+      "stages": [
+       [
+        6493,
+        "#FFBE12"
+       ],
+       [
+        6696,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4316,
+      "stages": [
+       [
+        6594,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5719,
+      "stages": [
+       [
+        6594,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.714,
+      "stages": [
+       [
+        6493,
+        "#FFBE12"
+       ],
+       [
+        6696,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8632,
+      "stages": [
+       [
+        6391,
+        "#41FF00"
+       ],
+       [
+        6493,
+        "#FFBE12"
+       ],
+       [
+        6696,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6290,
+        "#41FF00"
+       ],
+       [
+        6493,
+        "#FFBE12"
+       ],
+       [
+        6696,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -12681,8 +14667,129 @@
    "classId": "P1Gen2",
    "year": 2016,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     7000
+    ],
+    "steps": 70,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6290,
+        "#41FF00"
+       ],
+       [
+        6493,
+        "#FFBE12"
+       ],
+       [
+        6696,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1404,
+      "stages": [
+       [
+        6391,
+        "#41FF00"
+       ],
+       [
+        6493,
+        "#FFBE12"
+       ],
+       [
+        6696,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2825,
+      "stages": [
+       [
+        6493,
+        "#FFBE12"
+       ],
+       [
+        6696,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4316,
+      "stages": [
+       [
+        6594,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5719,
+      "stages": [
+       [
+        6594,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.714,
+      "stages": [
+       [
+        6493,
+        "#FFBE12"
+       ],
+       [
+        6696,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8632,
+      "stages": [
+       [
+        6391,
+        "#41FF00"
+       ],
+       [
+        6493,
+        "#FFBE12"
+       ],
+       [
+        6696,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6290,
+        "#41FF00"
+       ],
+       [
+        6493,
+        "#FFBE12"
+       ],
+       [
+        6696,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -12825,8 +14932,26 @@
    "classId": "InitD",
    "year": 1999,
    "source": "mod",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     8000
+    ],
+    "steps": 2,
+    "leds": [
+     {
+      "pos": 0.5,
+      "stages": [
+       [
+        8000,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -12873,8 +14998,107 @@
    "classId": "CopaTruck",
    "year": 2019,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     3600
+    ],
+    "steps": 56,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        3011,
+        "#0CFF1C"
+       ]
+      ]
+     },
+     {
+      "pos": 0.108,
+      "stages": [
+       [
+        3142,
+        "#0CFF1C"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2189,
+      "stages": [
+       [
+        3273,
+        "#FFA100"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3314,
+      "stages": [
+       [
+        3404,
+        "#FFA100"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4438,
+      "stages": [
+       [
+        3535,
+        "#FF2600"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5533,
+      "stages": [
+       [
+        3535,
+        "#FF2600"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6598,
+      "stages": [
+       [
+        3404,
+        "#FFA100"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7722,
+      "stages": [
+       [
+        3273,
+        "#FFA100"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8861,
+      "stages": [
+       [
+        3142,
+        "#0CFF1C"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        3011,
+        "#0CFF1C"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -13260,8 +15484,144 @@
    "classId": "Kart125cc",
    "year": 2016,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     15500
+    ],
+    "steps": 56,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        12682,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0769,
+      "stages": [
+       [
+        12682,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1538,
+      "stages": [
+       [
+        13245,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2308,
+      "stages": [
+       [
+        13245,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3077,
+      "stages": [
+       [
+        13809,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3846,
+      "stages": [
+       [
+        13809,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4615,
+      "stages": [
+       [
+        14373,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5385,
+      "stages": [
+       [
+        14373,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6154,
+      "stages": [
+       [
+        14936,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6923,
+      "stages": [
+       [
+        14936,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7692,
+      "stages": [
+       [
+        15500,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8462,
+      "stages": [
+       [
+        15500,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9231,
+      "stages": [
+       [
+        15500,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        15500,
+        "#05AEFF"
+       ]
+      ]
+     }
+    ],
+    "layout": "step-order",
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -13276,8 +15636,144 @@
    "classId": "KartShifter",
    "year": 2016,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     15300
+    ],
+    "steps": 56,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        12518,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0769,
+      "stages": [
+       [
+        12518,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1538,
+      "stages": [
+       [
+        13075,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2308,
+      "stages": [
+       [
+        13075,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3077,
+      "stages": [
+       [
+        13631,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3846,
+      "stages": [
+       [
+        13631,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4615,
+      "stages": [
+       [
+        14187,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5385,
+      "stages": [
+       [
+        14187,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6154,
+      "stages": [
+       [
+        14744,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6923,
+      "stages": [
+       [
+        14744,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7692,
+      "stages": [
+       [
+        15300,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8462,
+      "stages": [
+       [
+        15300,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9231,
+      "stages": [
+       [
+        15300,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        15300,
+        "#05AEFF"
+       ]
+      ]
+     }
+    ],
+    "layout": "step-order",
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -13292,8 +15788,144 @@
    "classId": "KartGX390",
    "year": 2016,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     4500
+    ],
+    "steps": 56,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        3682,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0769,
+      "stages": [
+       [
+        3682,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1538,
+      "stages": [
+       [
+        3845,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2308,
+      "stages": [
+       [
+        3845,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3077,
+      "stages": [
+       [
+        4009,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3846,
+      "stages": [
+       [
+        4009,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4615,
+      "stages": [
+       [
+        4173,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5385,
+      "stages": [
+       [
+        4173,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6154,
+      "stages": [
+       [
+        4336,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6923,
+      "stages": [
+       [
+        4336,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7692,
+      "stages": [
+       [
+        4500,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8462,
+      "stages": [
+       [
+        4500,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9231,
+      "stages": [
+       [
+        4500,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        4500,
+        "#05AEFF"
+       ]
+      ]
+     }
+    ],
+    "layout": "step-order",
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -13308,8 +15940,144 @@
    "classId": "KartRental",
    "year": 2016,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     15500
+    ],
+    "steps": 56,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        12682,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0769,
+      "stages": [
+       [
+        12682,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1538,
+      "stages": [
+       [
+        13245,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2308,
+      "stages": [
+       [
+        13245,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3077,
+      "stages": [
+       [
+        13809,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3846,
+      "stages": [
+       [
+        13809,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4615,
+      "stages": [
+       [
+        14373,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5385,
+      "stages": [
+       [
+        14373,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6154,
+      "stages": [
+       [
+        14936,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6923,
+      "stages": [
+       [
+        14936,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7692,
+      "stages": [
+       [
+        15500,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8462,
+      "stages": [
+       [
+        15500,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9231,
+      "stages": [
+       [
+        15500,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        15500,
+        "#05AEFF"
+       ]
+      ]
+     }
+    ],
+    "layout": "step-order",
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -13340,8 +16108,144 @@
    "classId": "Kart1",
    "year": 2016,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     15500
+    ],
+    "steps": 56,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        12682,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0769,
+      "stages": [
+       [
+        12682,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1538,
+      "stages": [
+       [
+        13245,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2308,
+      "stages": [
+       [
+        13245,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3077,
+      "stages": [
+       [
+        13809,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3846,
+      "stages": [
+       [
+        13809,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4615,
+      "stages": [
+       [
+        14373,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5385,
+      "stages": [
+       [
+        14373,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6154,
+      "stages": [
+       [
+        14936,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6923,
+      "stages": [
+       [
+        14936,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7692,
+      "stages": [
+       [
+        15500,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8462,
+      "stages": [
+       [
+        15500,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9231,
+      "stages": [
+       [
+        15500,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        15500,
+        "#05AEFF"
+       ]
+      ]
+     }
+    ],
+    "layout": "step-order",
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -13768,8 +16672,89 @@
    "classId": "Super Trofeo",
    "year": 2024,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     9000
+    ],
+    "steps": 90,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        7483,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1415,
+      "stages": [
+       [
+        7787,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.283,
+      "stages": [
+       [
+        8090,
+        "#FFBE12"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4311,
+      "stages": [
+       [
+        8393,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5726,
+      "stages": [
+       [
+        8393,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7192,
+      "stages": [
+       [
+        8090,
+        "#FFBE12"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8651,
+      "stages": [
+       [
+        7787,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        7483,
+        "#41FF00"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -13784,8 +16769,89 @@
    "classId": "Super Trofeo_LD",
    "year": 2024,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     9000
+    ],
+    "steps": 90,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        7483,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1415,
+      "stages": [
+       [
+        7787,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.283,
+      "stages": [
+       [
+        8090,
+        "#FFBE12"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4311,
+      "stages": [
+       [
+        8393,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5726,
+      "stages": [
+       [
+        8393,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7192,
+      "stages": [
+       [
+        8090,
+        "#FFBE12"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8651,
+      "stages": [
+       [
+        7787,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        7483,
+        "#41FF00"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -17446,8 +20512,107 @@
    "classId": "CopaTruck",
    "year": 2019,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     3600
+    ],
+    "steps": 56,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        3011,
+        "#0CFF1C"
+       ]
+      ]
+     },
+     {
+      "pos": 0.108,
+      "stages": [
+       [
+        3142,
+        "#0CFF1C"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2189,
+      "stages": [
+       [
+        3273,
+        "#FFA100"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3314,
+      "stages": [
+       [
+        3404,
+        "#FFA100"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4438,
+      "stages": [
+       [
+        3535,
+        "#FF2600"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5533,
+      "stages": [
+       [
+        3535,
+        "#FF2600"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6598,
+      "stages": [
+       [
+        3404,
+        "#FFA100"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7722,
+      "stages": [
+       [
+        3273,
+        "#FFA100"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8861,
+      "stages": [
+       [
+        3142,
+        "#0CFF1C"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        3011,
+        "#0CFF1C"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -30114,8 +33279,80 @@
    "classId": "World_GT_Challenge",
    "year": 2016,
    "source": "mod",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     8500
+    ],
+    "steps": 86,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6300,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1689,
+      "stages": [
+       [
+        6500,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3364,
+      "stages": [
+       [
+        6700,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5026,
+      "stages": [
+       [
+        6900,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6725,
+      "stages": [
+       [
+        7100,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8302,
+      "stages": [
+       [
+        7100,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        7100,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -30130,8 +33367,80 @@
    "classId": "GT3",
    "year": 2015,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     8000
+    ],
+    "steps": 48,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        7149,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3571,
+      "stages": [
+       [
+        6128,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4895,
+      "stages": [
+       [
+        6298,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6138,
+      "stages": [
+       [
+        6468,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.738,
+      "stages": [
+       [
+        6638,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.869,
+      "stages": [
+       [
+        6809,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6979,
+        "#41FF00"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -30146,8 +33455,139 @@
    "classId": "GT3_Gen2",
    "year": 2015,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     8000
+    ],
+    "steps": 80,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6076,
+        "#41FF00"
+       ],
+       [
+        6987,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0943,
+      "stages": [
+       [
+        6278,
+        "#41FF00"
+       ],
+       [
+        6987,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.263,
+      "stages": [
+       [
+        6481,
+        "#FFBE12"
+       ],
+       [
+        6987,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3573,
+      "stages": [
+       [
+        6684,
+        "#FFBE12"
+       ],
+       [
+        6987,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4516,
+      "stages": [
+       [
+        6785,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5484,
+      "stages": [
+       [
+        6785,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6427,
+      "stages": [
+       [
+        6684,
+        "#FFBE12"
+       ],
+       [
+        6987,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.737,
+      "stages": [
+       [
+        6481,
+        "#FFBE12"
+       ],
+       [
+        6987,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9057,
+      "stages": [
+       [
+        6278,
+        "#41FF00"
+       ],
+       [
+        6987,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6076,
+        "#41FF00"
+       ],
+       [
+        6987,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -30162,8 +33602,139 @@
    "classId": "GT3_Gen2_LD",
    "year": 2015,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     8000
+    ],
+    "steps": 80,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6076,
+        "#41FF00"
+       ],
+       [
+        6987,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0943,
+      "stages": [
+       [
+        6278,
+        "#41FF00"
+       ],
+       [
+        6987,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.263,
+      "stages": [
+       [
+        6481,
+        "#FFBE12"
+       ],
+       [
+        6987,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3573,
+      "stages": [
+       [
+        6684,
+        "#FFBE12"
+       ],
+       [
+        6987,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4516,
+      "stages": [
+       [
+        6785,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5484,
+      "stages": [
+       [
+        6785,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6427,
+      "stages": [
+       [
+        6684,
+        "#FFBE12"
+       ],
+       [
+        6987,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.737,
+      "stages": [
+       [
+        6481,
+        "#FFBE12"
+       ],
+       [
+        6987,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9057,
+      "stages": [
+       [
+        6278,
+        "#41FF00"
+       ],
+       [
+        6987,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6076,
+        "#41FF00"
+       ],
+       [
+        6987,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -30178,8 +33749,80 @@
    "classId": "GT4",
    "year": 2015,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     7200
+    ],
+    "steps": 48,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6434,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3571,
+      "stages": [
+       [
+        5515,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4895,
+      "stages": [
+       [
+        5668,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6138,
+      "stages": [
+       [
+        5821,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.738,
+      "stages": [
+       [
+        5974,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.869,
+      "stages": [
+       [
+        6128,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6281,
+        "#41FF00"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -30194,8 +33837,80 @@
    "classId": "SafetyCar",
    "year": 2015,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     7200
+    ],
+    "steps": 48,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6434,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3571,
+      "stages": [
+       [
+        5515,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4895,
+      "stages": [
+       [
+        5668,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6138,
+      "stages": [
+       [
+        5821,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.738,
+      "stages": [
+       [
+        5974,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.869,
+      "stages": [
+       [
+        6128,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6281,
+        "#41FF00"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -30252,8 +33967,107 @@
    "classId": "CopaTruck",
    "year": 2019,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     3600
+    ],
+    "steps": 56,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        3011,
+        "#0CFF1C"
+       ]
+      ]
+     },
+     {
+      "pos": 0.108,
+      "stages": [
+       [
+        3142,
+        "#0CFF1C"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2189,
+      "stages": [
+       [
+        3273,
+        "#FFA100"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3314,
+      "stages": [
+       [
+        3404,
+        "#FFA100"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4438,
+      "stages": [
+       [
+        3535,
+        "#FF2600"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5533,
+      "stages": [
+       [
+        3535,
+        "#FF2600"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6598,
+      "stages": [
+       [
+        3404,
+        "#FFA100"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7722,
+      "stages": [
+       [
+        3273,
+        "#FFA100"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8861,
+      "stages": [
+       [
+        3142,
+        "#0CFF1C"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        3011,
+        "#0CFF1C"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -30268,8 +34082,80 @@
    "classId": "GT1",
    "year": 1998,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     9000
+    ],
+    "steps": 83,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        8671,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0178,
+      "stages": [
+       [
+        8122,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1289,
+      "stages": [
+       [
+        8232,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2356,
+      "stages": [
+       [
+        8341,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3422,
+      "stages": [
+       [
+        8451,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4489,
+      "stages": [
+       [
+        8561,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        8671,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -30284,8 +34170,80 @@
    "classId": "GT1_LD",
    "year": 1998,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     9000
+    ],
+    "steps": 83,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        8671,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0178,
+      "stages": [
+       [
+        8122,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1289,
+      "stages": [
+       [
+        8232,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2356,
+      "stages": [
+       [
+        8341,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3422,
+      "stages": [
+       [
+        8451,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4489,
+      "stages": [
+       [
+        8561,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        8671,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -30300,8 +34258,171 @@
    "classId": "P1",
    "year": 2016,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     6350
+    ],
+    "steps": 69,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        5883,
+        "#41FF00"
+       ],
+       [
+        6163,
+        "#FF4D01"
+       ],
+       [
+        6350,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1105,
+      "stages": [
+       [
+        5976,
+        "#41FF00"
+       ],
+       [
+        6163,
+        "#FF4D01"
+       ],
+       [
+        6350,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2267,
+      "stages": [
+       [
+        6070,
+        "#41FF00"
+       ],
+       [
+        6163,
+        "#FF4D01"
+       ],
+       [
+        6350,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3372,
+      "stages": [
+       [
+        6163,
+        "#FF4D01"
+       ],
+       [
+        6350,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4506,
+      "stages": [
+       [
+        6257,
+        "#FF4D01"
+       ],
+       [
+        6350,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5494,
+      "stages": [
+       [
+        6257,
+        "#FF4D01"
+       ],
+       [
+        6350,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6657,
+      "stages": [
+       [
+        6163,
+        "#FF4D01"
+       ],
+       [
+        6350,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7733,
+      "stages": [
+       [
+        6070,
+        "#41FF00"
+       ],
+       [
+        6163,
+        "#FF4D01"
+       ],
+       [
+        6350,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8895,
+      "stages": [
+       [
+        5976,
+        "#41FF00"
+       ],
+       [
+        6163,
+        "#FF4D01"
+       ],
+       [
+        6350,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        5883,
+        "#41FF00"
+       ],
+       [
+        6163,
+        "#FF4D01"
+       ],
+       [
+        6350,
+        "#FF60CD"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -30316,8 +34437,171 @@
    "classId": "P1Gen2",
    "year": 2023,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     6350
+    ],
+    "steps": 69,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        5883,
+        "#41FF00"
+       ],
+       [
+        6163,
+        "#FF4D01"
+       ],
+       [
+        6350,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1105,
+      "stages": [
+       [
+        5976,
+        "#41FF00"
+       ],
+       [
+        6163,
+        "#FF4D01"
+       ],
+       [
+        6350,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2267,
+      "stages": [
+       [
+        6070,
+        "#41FF00"
+       ],
+       [
+        6163,
+        "#FF4D01"
+       ],
+       [
+        6350,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3372,
+      "stages": [
+       [
+        6163,
+        "#FF4D01"
+       ],
+       [
+        6350,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4506,
+      "stages": [
+       [
+        6257,
+        "#FF4D01"
+       ],
+       [
+        6350,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5494,
+      "stages": [
+       [
+        6257,
+        "#FF4D01"
+       ],
+       [
+        6350,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6657,
+      "stages": [
+       [
+        6163,
+        "#FF4D01"
+       ],
+       [
+        6350,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7733,
+      "stages": [
+       [
+        6070,
+        "#41FF00"
+       ],
+       [
+        6163,
+        "#FF4D01"
+       ],
+       [
+        6350,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8895,
+      "stages": [
+       [
+        5976,
+        "#41FF00"
+       ],
+       [
+        6163,
+        "#FF4D01"
+       ],
+       [
+        6350,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        5883,
+        "#41FF00"
+       ],
+       [
+        6163,
+        "#FF4D01"
+       ],
+       [
+        6350,
+        "#FF60CD"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -30332,8 +34616,171 @@
    "classId": "P1Gen2",
    "year": 2023,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     7200
+    ],
+    "steps": 69,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6671,
+        "#41FF00"
+       ],
+       [
+        6988,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1105,
+      "stages": [
+       [
+        6776,
+        "#41FF00"
+       ],
+       [
+        6988,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2267,
+      "stages": [
+       [
+        6882,
+        "#41FF00"
+       ],
+       [
+        6988,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3372,
+      "stages": [
+       [
+        6988,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4506,
+      "stages": [
+       [
+        7094,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5494,
+      "stages": [
+       [
+        7094,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6657,
+      "stages": [
+       [
+        6988,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7733,
+      "stages": [
+       [
+        6882,
+        "#41FF00"
+       ],
+       [
+        6988,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8895,
+      "stages": [
+       [
+        6776,
+        "#41FF00"
+       ],
+       [
+        6988,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6671,
+        "#41FF00"
+       ],
+       [
+        6988,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -30348,8 +34795,171 @@
    "classId": "P1Gen2",
    "year": 2023,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     7200
+    ],
+    "steps": 69,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6671,
+        "#41FF00"
+       ],
+       [
+        6988,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1105,
+      "stages": [
+       [
+        6776,
+        "#41FF00"
+       ],
+       [
+        6988,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2267,
+      "stages": [
+       [
+        6882,
+        "#41FF00"
+       ],
+       [
+        6988,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3372,
+      "stages": [
+       [
+        6988,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4506,
+      "stages": [
+       [
+        7094,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5494,
+      "stages": [
+       [
+        7094,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6657,
+      "stages": [
+       [
+        6988,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7733,
+      "stages": [
+       [
+        6882,
+        "#41FF00"
+       ],
+       [
+        6988,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8895,
+      "stages": [
+       [
+        6776,
+        "#41FF00"
+       ],
+       [
+        6988,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6671,
+        "#41FF00"
+       ],
+       [
+        6988,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -30364,8 +34974,171 @@
    "classId": "P1",
    "year": 2016,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     7200
+    ],
+    "steps": 69,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6671,
+        "#41FF00"
+       ],
+       [
+        6988,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1105,
+      "stages": [
+       [
+        6776,
+        "#41FF00"
+       ],
+       [
+        6988,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2267,
+      "stages": [
+       [
+        6882,
+        "#41FF00"
+       ],
+       [
+        6988,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3372,
+      "stages": [
+       [
+        6988,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4506,
+      "stages": [
+       [
+        7094,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5494,
+      "stages": [
+       [
+        7094,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6657,
+      "stages": [
+       [
+        6988,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7733,
+      "stages": [
+       [
+        6882,
+        "#41FF00"
+       ],
+       [
+        6988,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8895,
+      "stages": [
+       [
+        6776,
+        "#41FF00"
+       ],
+       [
+        6988,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6671,
+        "#41FF00"
+       ],
+       [
+        6988,
+        "#FF4D01"
+       ],
+       [
+        7200,
+        "#FF60CD"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -30380,8 +35153,171 @@
    "classId": "P1",
    "year": 2016,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     10800
+    ],
+    "steps": 69,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        10006,
+        "#41FF00"
+       ],
+       [
+        10482,
+        "#FF4D01"
+       ],
+       [
+        10800,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1105,
+      "stages": [
+       [
+        10165,
+        "#41FF00"
+       ],
+       [
+        10482,
+        "#FF4D01"
+       ],
+       [
+        10800,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2267,
+      "stages": [
+       [
+        10324,
+        "#41FF00"
+       ],
+       [
+        10482,
+        "#FF4D01"
+       ],
+       [
+        10800,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3372,
+      "stages": [
+       [
+        10482,
+        "#FF4D01"
+       ],
+       [
+        10800,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4506,
+      "stages": [
+       [
+        10641,
+        "#FF4D01"
+       ],
+       [
+        10800,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5494,
+      "stages": [
+       [
+        10641,
+        "#FF4D01"
+       ],
+       [
+        10800,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6657,
+      "stages": [
+       [
+        10482,
+        "#FF4D01"
+       ],
+       [
+        10800,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7733,
+      "stages": [
+       [
+        10324,
+        "#41FF00"
+       ],
+       [
+        10482,
+        "#FF4D01"
+       ],
+       [
+        10800,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8895,
+      "stages": [
+       [
+        10165,
+        "#41FF00"
+       ],
+       [
+        10482,
+        "#FF4D01"
+       ],
+       [
+        10800,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        10006,
+        "#41FF00"
+       ],
+       [
+        10482,
+        "#FF4D01"
+       ],
+       [
+        10800,
+        "#FF60CD"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -30396,8 +35332,171 @@
    "classId": "P1",
    "year": 2016,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     7300
+    ],
+    "steps": 69,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6763,
+        "#41FF00"
+       ],
+       [
+        7085,
+        "#FF4D01"
+       ],
+       [
+        7300,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1105,
+      "stages": [
+       [
+        6871,
+        "#41FF00"
+       ],
+       [
+        7085,
+        "#FF4D01"
+       ],
+       [
+        7300,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2267,
+      "stages": [
+       [
+        6978,
+        "#41FF00"
+       ],
+       [
+        7085,
+        "#FF4D01"
+       ],
+       [
+        7300,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3372,
+      "stages": [
+       [
+        7085,
+        "#FF4D01"
+       ],
+       [
+        7300,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4506,
+      "stages": [
+       [
+        7193,
+        "#FF4D01"
+       ],
+       [
+        7300,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5494,
+      "stages": [
+       [
+        7193,
+        "#FF4D01"
+       ],
+       [
+        7300,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6657,
+      "stages": [
+       [
+        7085,
+        "#FF4D01"
+       ],
+       [
+        7300,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7733,
+      "stages": [
+       [
+        6978,
+        "#41FF00"
+       ],
+       [
+        7085,
+        "#FF4D01"
+       ],
+       [
+        7300,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8895,
+      "stages": [
+       [
+        6871,
+        "#41FF00"
+       ],
+       [
+        7085,
+        "#FF4D01"
+       ],
+       [
+        7300,
+        "#FF60CD"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6763,
+        "#41FF00"
+       ],
+       [
+        7085,
+        "#FF4D01"
+       ],
+       [
+        7300,
+        "#FF60CD"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -30424,8 +35523,98 @@
    "classId": "P2",
    "year": 2019,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     7400
+    ],
+    "steps": 49,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        5858,
+        "#27FF26"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1164,
+      "stages": [
+       [
+        5858,
+        "#27FF26"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2479,
+      "stages": [
+       [
+        5858,
+        "#27FF26"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3714,
+      "stages": [
+       [
+        6475,
+        "#FFAA06"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4989,
+      "stages": [
+       [
+        6475,
+        "#FFAA06"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6249,
+      "stages": [
+       [
+        6475,
+        "#FFAA06"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7442,
+      "stages": [
+       [
+        6938,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8719,
+      "stages": [
+       [
+        6938,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6938,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -30468,8 +35657,71 @@
    "classId": "GT2_05",
    "year": 2005,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     9500
+    ],
+    "steps": 96,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        7900,
+        "#FF0E00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2022,
+      "stages": [
+       [
+        8100,
+        "#FF0E00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4088,
+      "stages": [
+       [
+        8300,
+        "#FF0E00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6029,
+      "stages": [
+       [
+        8500,
+        "#FF0E00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8027,
+      "stages": [
+       [
+        8600,
+        "#FF0E00"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        8700,
+        "#FF0E00"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -30484,8 +35736,71 @@
    "classId": "GT2_05_LD",
    "year": 2005,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     9500
+    ],
+    "steps": 96,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        7900,
+        "#FF0E00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2022,
+      "stages": [
+       [
+        8100,
+        "#FF0E00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4088,
+      "stages": [
+       [
+        8300,
+        "#FF0E00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6029,
+      "stages": [
+       [
+        8500,
+        "#FF0E00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8027,
+      "stages": [
+       [
+        8600,
+        "#FF0E00"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        8700,
+        "#FF0E00"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -30500,8 +35815,89 @@
    "classId": "MiniChallenge",
    "year": 2020,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     7100
+    ],
+    "steps": 30,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        5141,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0595,
+      "stages": [
+       [
+        5386,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.121,
+      "stages": [
+       [
+        5631,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1836,
+      "stages": [
+       [
+        5876,
+        "#FFAA06"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8154,
+      "stages": [
+       [
+        6121,
+        "#FFAA06"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8769,
+      "stages": [
+       [
+        6366,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9364,
+      "stages": [
+       [
+        6610,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6855,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -31219,8 +36615,134 @@
    "classId": "LancerCup",
    "year": 2017,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     7200
+    ],
+    "steps": 40,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        4800,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0829,
+      "stages": [
+       [
+        4985,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.168,
+      "stages": [
+       [
+        5169,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2499,
+      "stages": [
+       [
+        5354,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3349,
+      "stages": [
+       [
+        5538,
+        "#FFAA06"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4179,
+      "stages": [
+       [
+        5723,
+        "#FFAA06"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5019,
+      "stages": [
+       [
+        5908,
+        "#FFAA06"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5848,
+      "stages": [
+       [
+        6092,
+        "#FFAA06"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6677,
+      "stages": [
+       [
+        6277,
+        "#FFAA06"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7512,
+      "stages": [
+       [
+        6462,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8341,
+      "stages": [
+       [
+        6646,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9181,
+      "stages": [
+       [
+        6831,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        7015,
+        "#FF4D00"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -31235,8 +36757,134 @@
    "classId": "LancerCup",
    "year": 2017,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     7200
+    ],
+    "steps": 32,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        4181,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0828,
+      "stages": [
+       [
+        4413,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1677,
+      "stages": [
+       [
+        4645,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2505,
+      "stages": [
+       [
+        4877,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3355,
+      "stages": [
+       [
+        5110,
+        "#5FFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4183,
+      "stages": [
+       [
+        5342,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5011,
+      "stages": [
+       [
+        5574,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5839,
+      "stages": [
+       [
+        5806,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6688,
+      "stages": [
+       [
+        6039,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7516,
+      "stages": [
+       [
+        6271,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8344,
+      "stages": [
+       [
+        6503,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9172,
+      "stages": [
+       [
+        6735,
+        "#FF4D00"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6968,
+        "#FF4D00"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -31251,8 +36899,89 @@
    "classId": "World_GT_Challenge",
    "year": 2020,
    "source": "mod",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     7600
+    ],
+    "steps": 28,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6756,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0595,
+      "stages": [
+       [
+        6756,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.121,
+      "stages": [
+       [
+        6756,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1836,
+      "stages": [
+       [
+        7037,
+        "#FFAA06"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8174,
+      "stages": [
+       [
+        7037,
+        "#FFAA06"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8769,
+      "stages": [
+       [
+        7319,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9385,
+      "stages": [
+       [
+        7319,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        7319,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -31267,8 +36996,89 @@
    "classId": "GT3",
    "year": 2016,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     8000
+    ],
+    "steps": 67,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6545,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0493,
+      "stages": [
+       [
+        6545,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1,
+      "stages": [
+       [
+        6545,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.149,
+      "stages": [
+       [
+        6788,
+        "#FFBE12"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8515,
+      "stages": [
+       [
+        6788,
+        "#FFBE12"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9004,
+      "stages": [
+       [
+        7030,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9497,
+      "stages": [
+       [
+        7030,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        7030,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -31283,8 +37093,26 @@
    "classId": "GT1",
    "year": 1998,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     9100
+    ],
+    "steps": 108,
+    "leds": [
+     {
+      "pos": 0.5,
+      "stages": [
+       [
+        7399,
+        "#FFAA06"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -31299,8 +37127,26 @@
    "classId": "GT1_LD",
    "year": 1998,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     9100
+    ],
+    "steps": 108,
+    "leds": [
+     {
+      "pos": 0.5,
+      "stages": [
+       [
+        7399,
+        "#FFAA06"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -33509,8 +39355,109 @@
    "classId": "GTCupN",
    "year": 2016,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     9500
+    ],
+    "steps": 95,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        8388,
+        "#41FF00"
+       ],
+       [
+        9197,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0605,
+      "stages": [
+       [
+        8489,
+        "#41FF00"
+       ],
+       [
+        9197,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1219,
+      "stages": [
+       [
+        8590,
+        "#41FF00"
+       ],
+       [
+        9197,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1855,
+      "stages": [
+       [
+        8691,
+        "#00A1FF"
+       ],
+       [
+        9197,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8186,
+      "stages": [
+       [
+        8793,
+        "#00A1FF"
+       ],
+       [
+        9197,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8781,
+      "stages": [
+       [
+        8894,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9416,
+      "stages": [
+       [
+        8995,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        9096,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -33546,8 +39493,109 @@
    "classId": "Carrera Cup",
    "year": 2016,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     8500
+    ],
+    "steps": 95,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        7505,
+        "#41FF00"
+       ],
+       [
+        8229,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0605,
+      "stages": [
+       [
+        7596,
+        "#41FF00"
+       ],
+       [
+        8229,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1219,
+      "stages": [
+       [
+        7686,
+        "#41FF00"
+       ],
+       [
+        8229,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1855,
+      "stages": [
+       [
+        7777,
+        "#00A1FF"
+       ],
+       [
+        8229,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8186,
+      "stages": [
+       [
+        7867,
+        "#00A1FF"
+       ],
+       [
+        8229,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8781,
+      "stages": [
+       [
+        7957,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9416,
+      "stages": [
+       [
+        8048,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        8138,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -33562,8 +39610,109 @@
    "classId": "Carrera Cup",
    "year": 2016,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     8500
+    ],
+    "steps": 95,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        7505,
+        "#41FF00"
+       ],
+       [
+        8229,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0605,
+      "stages": [
+       [
+        7596,
+        "#41FF00"
+       ],
+       [
+        8229,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1219,
+      "stages": [
+       [
+        7686,
+        "#41FF00"
+       ],
+       [
+        8229,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1855,
+      "stages": [
+       [
+        7777,
+        "#00A1FF"
+       ],
+       [
+        8229,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8186,
+      "stages": [
+       [
+        7867,
+        "#00A1FF"
+       ],
+       [
+        8229,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8781,
+      "stages": [
+       [
+        7957,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9416,
+      "stages": [
+       [
+        8048,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        8138,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -33578,8 +39727,109 @@
    "classId": "GT3",
    "year": 2016,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     9500
+    ],
+    "steps": 95,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        8388,
+        "#41FF00"
+       ],
+       [
+        9197,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0605,
+      "stages": [
+       [
+        8489,
+        "#41FF00"
+       ],
+       [
+        9197,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1219,
+      "stages": [
+       [
+        8590,
+        "#41FF00"
+       ],
+       [
+        9197,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1855,
+      "stages": [
+       [
+        8691,
+        "#00A1FF"
+       ],
+       [
+        9197,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8186,
+      "stages": [
+       [
+        8793,
+        "#00A1FF"
+       ],
+       [
+        9197,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8781,
+      "stages": [
+       [
+        8894,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9416,
+      "stages": [
+       [
+        8995,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        9096,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -34752,8 +41002,89 @@
    "classId": "GT2_05",
    "year": 2005,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     9000
+    ],
+    "steps": 75,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        7541,
+        "#2DFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0507,
+      "stages": [
+       [
+        7541,
+        "#2DFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0999,
+      "stages": [
+       [
+        7541,
+        "#2DFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1498,
+      "stages": [
+       [
+        7905,
+        "#FFA700"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8511,
+      "stages": [
+       [
+        7905,
+        "#FFA700"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9002,
+      "stages": [
+       [
+        8149,
+        "#FF0E00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9497,
+      "stages": [
+       [
+        8149,
+        "#FF0E00"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        8149,
+        "#FF0E00"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -34768,8 +41099,89 @@
    "classId": "GT2_05_LD",
    "year": 2005,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     9000
+    ],
+    "steps": 75,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        7541,
+        "#2DFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0507,
+      "stages": [
+       [
+        7541,
+        "#2DFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0999,
+      "stages": [
+       [
+        7541,
+        "#2DFF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1498,
+      "stages": [
+       [
+        7905,
+        "#FFA700"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8511,
+      "stages": [
+       [
+        7905,
+        "#FFA700"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9002,
+      "stages": [
+       [
+        8149,
+        "#FF0E00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9497,
+      "stages": [
+       [
+        8149,
+        "#FF0E00"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        8149,
+        "#FF0E00"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -35852,8 +42264,62 @@
    "classId": "GT5",
    "year": 2012,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     6300
+    ],
+    "steps": 16,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        4620,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2494,
+      "stages": [
+       [
+        5040,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4988,
+      "stages": [
+       [
+        5460,
+        "#FFAA06"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7506,
+      "stages": [
+       [
+        5880,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6300,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -36522,8 +42988,107 @@
    "classId": "P3",
    "year": 2019,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     9200
+    ],
+    "steps": 79,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6959,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1154,
+      "stages": [
+       [
+        7195,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2273,
+      "stages": [
+       [
+        7431,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3393,
+      "stages": [
+       [
+        7667,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4444,
+      "stages": [
+       [
+        7903,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5556,
+      "stages": [
+       [
+        8138,
+        "#FFAA06"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6641,
+      "stages": [
+       [
+        8374,
+        "#FFAA06"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7727,
+      "stages": [
+       [
+        8610,
+        "#FFAA06"
+       ]
+      ]
+     },
+     {
+      "pos": 0.888,
+      "stages": [
+       [
+        8846,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        9082,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -36684,8 +43249,135 @@
    "classId": "P1Gen2",
    "year": 2020,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     7000
+    ],
+    "steps": 70,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        5377,
+        "#41FF00"
+       ],
+       [
+        6188,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1061,
+      "stages": [
+       [
+        5377,
+        "#41FF00"
+       ],
+       [
+        6188,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.224,
+      "stages": [
+       [
+        5478,
+        "#41FF00"
+       ],
+       [
+        6188,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3344,
+      "stages": [
+       [
+        5478,
+        "#41FF00"
+       ],
+       [
+        6188,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4459,
+      "stages": [
+       [
+        5580,
+        "#FF4D01"
+       ],
+       [
+        6188,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5536,
+      "stages": [
+       [
+        5681,
+        "#FF4D01"
+       ],
+       [
+        6188,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.671,
+      "stages": [
+       [
+        5783,
+        "#FF4D01"
+       ],
+       [
+        6188,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7749,
+      "stages": [
+       [
+        5884,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8928,
+      "stages": [
+       [
+        5986,
+        "#00A1FF"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6087,
+        "#00A1FF"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -37072,8 +43764,62 @@
    "classId": "STT",
    "year": 2019,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     7800
+    ],
+    "steps": 73,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6283,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2553,
+      "stages": [
+       [
+        6392,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5106,
+      "stages": [
+       [
+        6500,
+        "#FFAA06"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7447,
+      "stages": [
+       [
+        6608,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6717,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -37088,8 +43834,62 @@
    "classId": "SafetyCar",
    "year": 2019,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     7800
+    ],
+    "steps": 73,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6283,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2553,
+      "stages": [
+       [
+        6392,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5106,
+      "stages": [
+       [
+        6500,
+        "#FFAA06"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7447,
+      "stages": [
+       [
+        6608,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6717,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -37104,8 +43904,98 @@
    "classId": "SuperV8",
    "year": 2019,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     7500
+    ],
+    "steps": 100,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6818,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1404,
+      "stages": [
+       [
+        6818,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2829,
+      "stages": [
+       [
+        6818,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4298,
+      "stages": [
+       [
+        6970,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.568,
+      "stages": [
+       [
+        6970,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7127,
+      "stages": [
+       [
+        6970,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8575,
+      "stages": [
+       [
+        7121,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9912,
+      "stages": [
+       [
+        7121,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        7121,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -37951,8 +44841,89 @@
    "classId": "World_GT_Challenge",
    "year": 2020,
    "source": "mod",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     8000
+    ],
+    "steps": 30,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6897,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0614,
+      "stages": [
+       [
+        6897,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1228,
+      "stages": [
+       [
+        6897,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1832,
+      "stages": [
+       [
+        7172,
+        "#FFAA06"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8178,
+      "stages": [
+       [
+        7172,
+        "#FFAA06"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8772,
+      "stages": [
+       [
+        7448,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9386,
+      "stages": [
+       [
+        7448,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        7448,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -38013,8 +44984,89 @@
    "classId": "GTOpen",
    "year": 2012,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     7200
+    ],
+    "steps": 52,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        5929,
+        "#27FF26"
+       ]
+      ]
+     },
+     {
+      "pos": 0.0671,
+      "stages": [
+       [
+        6071,
+        "#27FF26"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1364,
+      "stages": [
+       [
+        6212,
+        "#27FF26"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2056,
+      "stages": [
+       [
+        6353,
+        "#FFDC11"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7934,
+      "stages": [
+       [
+        6494,
+        "#FFDC11"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8636,
+      "stages": [
+       [
+        6635,
+        "#FFDC11"
+       ]
+      ]
+     },
+     {
+      "pos": 0.9318,
+      "stages": [
+       [
+        6776,
+        "#FF6911"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6918,
+        "#FF6911"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -38045,8 +45097,107 @@
    "classId": "CopaTruck",
    "year": 2019,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     3600
+    ],
+    "steps": 56,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        3011,
+        "#0CFF1C"
+       ]
+      ]
+     },
+     {
+      "pos": 0.108,
+      "stages": [
+       [
+        3142,
+        "#0CFF1C"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2189,
+      "stages": [
+       [
+        3273,
+        "#FFA100"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3314,
+      "stages": [
+       [
+        3404,
+        "#FFA100"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4438,
+      "stages": [
+       [
+        3535,
+        "#FF2600"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5533,
+      "stages": [
+       [
+        3535,
+        "#FF2600"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6598,
+      "stages": [
+       [
+        3404,
+        "#FFA100"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7722,
+      "stages": [
+       [
+        3273,
+        "#FFA100"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8861,
+      "stages": [
+       [
+        3142,
+        "#0CFF1C"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        3011,
+        "#0CFF1C"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -38093,8 +45244,108 @@
    "classId": "RX",
    "year": 2016,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     8000
+    ],
+    "steps": 80,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        6278,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.1111,
+      "stages": [
+       [
+        6278,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2222,
+      "stages": [
+       [
+        6278,
+        "#41FF00"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3333,
+      "stages": [
+       [
+        6481,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4444,
+      "stages": [
+       [
+        6481,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5556,
+      "stages": [
+       [
+        6481,
+        "#05AEFF"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6667,
+      "stages": [
+       [
+        6582,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7778,
+      "stages": [
+       [
+        6684,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8889,
+      "stages": [
+       [
+        6684,
+        "#FF4D01"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        6684,
+        "#FF4D01"
+       ]
+      ]
+     }
+    ],
+    "layout": "step-order",
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"
@@ -38141,8 +45392,107 @@
    "classId": "CopaTruck",
    "year": 2019,
    "source": "reiza",
-   "dash": "tacho",
-   "rev": null,
+   "dash": "shift-lights",
+   "rev": {
+    "range": [
+     0,
+     3600
+    ],
+    "steps": 56,
+    "leds": [
+     {
+      "pos": 0.0,
+      "stages": [
+       [
+        3011,
+        "#0CFF1C"
+       ]
+      ]
+     },
+     {
+      "pos": 0.108,
+      "stages": [
+       [
+        3142,
+        "#0CFF1C"
+       ]
+      ]
+     },
+     {
+      "pos": 0.2189,
+      "stages": [
+       [
+        3273,
+        "#FFA100"
+       ]
+      ]
+     },
+     {
+      "pos": 0.3314,
+      "stages": [
+       [
+        3404,
+        "#FFA100"
+       ]
+      ]
+     },
+     {
+      "pos": 0.4438,
+      "stages": [
+       [
+        3535,
+        "#FF2600"
+       ]
+      ]
+     },
+     {
+      "pos": 0.5533,
+      "stages": [
+       [
+        3535,
+        "#FF2600"
+       ]
+      ]
+     },
+     {
+      "pos": 0.6598,
+      "stages": [
+       [
+        3404,
+        "#FFA100"
+       ]
+      ]
+     },
+     {
+      "pos": 0.7722,
+      "stages": [
+       [
+        3273,
+        "#FFA100"
+       ]
+      ]
+     },
+     {
+      "pos": 0.8861,
+      "stages": [
+       [
+        3142,
+        "#0CFF1C"
+       ]
+      ]
+     },
+     {
+      "pos": 1.0,
+      "stages": [
+       [
+        3011,
+        "#0CFF1C"
+       ]
+      ]
+     }
+    ],
+    "withTacho": true
+   },
    "limiter": null,
    "since": "1.6.9.96",
    "changed": "1.6.9.96"

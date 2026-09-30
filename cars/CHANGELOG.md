@@ -2,6 +2,87 @@
 
 Newest first. Written by the extraction tools on every update.
 
+## AMS2 1.6.9.96 (update, 2026-09-30)
+
+**Changed (77):**
+- Alpine A424: dash "tacho" → "shift-lights"; rev
+- Alpine A424 - Low Downforce: dash "tacho" → "shift-lights"; rev
+- BMW M6 GT3: dash "tacho" → "shift-lights"; rev
+- Brabham BT62: dash "tacho" → "shift-lights"; rev; limiter
+- Chevrolet Camaro GT4.R: dash "tacho" → "shift-lights"; rev
+- Chevrolet Camaro ZL-1 GT4.R: dash "tacho" → "shift-lights"; rev
+- Citroen DS3 RX: dash "tacho" → "shift-lights"; rev
+- Copa Montana: dash "tacho" → "shift-lights"; rev
+- Dodge Challenger Hellcat Racing: dash "tacho" → "shift-lights"; rev
+- Dodge Viper GTS-R: dash "tacho" → "shift-lights"; rev
+- Dodge Viper GTS-R - Low Downforce: dash "tacho" → "shift-lights"; rev
+- Dodge Viper SRT10: dash "tacho" → "shift-lights"; rev
+- Ferrari 430 Scuderia: dash "tacho" → "shift-lights"; rev
+- Ferrari FXX K: dash "tacho" → "shift-lights"; rev
+- Ferrari LaFerrari: dash "tacho" → "shift-lights"; rev
+- Ford Mustang GT Racing: dash "tacho" → "shift-lights"; rev
+- Formula Dirt: dash "tacho" → "shift-lights"; rev
+- Formula Inter MG-15: dash "tacho" → "shift-lights"; rev
+- Formula Trainer Advanced: dash "tacho" → "shift-lights"; rev
+- Formula Vee Gen2: dash "tacho" → "shift-lights"; rev
+- Ginetta G55 GT3: dash "tacho" → "shift-lights"; rev
+- Ginetta G55 GT4 Supercup: dash "tacho" → "shift-lights"; rev
+- Ginetta G58: dash "tacho" → "shift-lights"; rev
+- Ginetta G58 Gen2: dash "tacho" → "shift-lights"; rev
+- Initial D - Nissan Skyline GT-R V-Spec (R34): dash "tacho" → "shift-lights"; rev
+- Iveco Stralis: dash "tacho" → "shift-lights"; rev
+- Kart 2-Stroke 125cc Direct: dash "tacho" → "shift-lights"; rev
+- Kart 2-Stroke 125cc Shifter: dash "tacho" → "shift-lights"; rev
+- Kart 4-Stroke Race: dash "tacho" → "shift-lights"; rev
+- Kart 4-Stroke Rental: dash "tacho" → "shift-lights"; rev
+- Kart physics test: dash "tacho" → "shift-lights"; rev
+- Lamborghini Huracan Super Trofeo EVO2: dash "tacho" → "shift-lights"; rev
+- Lamborghini Huracan Super Trofeo EVO2 - Low Downforce: dash "tacho" → "shift-lights"; rev
+- MAN TGX: dash "tacho" → "shift-lights"; rev
+- MINI Cooper JCW: dash "tacho" → "shift-lights"; rev
+- Mercedes AMG C63 Coupe Racing: dash "tacho" → "shift-lights"; rev
+- Mercedes-AMG GT3: dash "tacho" → "shift-lights"; rev
+- Mercedes-AMG GT3 Evo: dash "tacho" → "shift-lights"; rev
+- Mercedes-AMG GT3 Evo - Low Downforce: dash "tacho" → "shift-lights"; rev
+- Mercedes-AMG GT4: dash "tacho" → "shift-lights"; rev
+- Mercedes-AMG SC: dash "tacho" → "shift-lights"; rev
+- Mercedes-Benz Actros: dash "tacho" → "shift-lights"; rev
+- Mercedes-Benz CLK LM: dash "tacho" → "shift-lights"; rev
+- Mercedes-Benz CLK LM - Low Downforce: dash "tacho" → "shift-lights"; rev
+- MetalMoro AJR Chevrolet: dash "tacho" → "shift-lights"; rev
+- MetalMoro AJR Gen2 Chevrolet: dash "tacho" → "shift-lights"; rev
+- MetalMoro AJR Gen2 Honda: dash "tacho" → "shift-lights"; rev
+- MetalMoro AJR Gen2 Nissan: dash "tacho" → "shift-lights"; rev
+- MetalMoro AJR Honda: dash "tacho" → "shift-lights"; rev
+- MetalMoro AJR Judd: dash "tacho" → "shift-lights"; rev
+- MetalMoro AJR Nissan: dash "tacho" → "shift-lights"; rev
+- MetalMoro MRX Duratec Turbo P2: dash "tacho" → "shift-lights"; rev
+- Milano GT36: dash "tacho" → "shift-lights"; rev
+- Milano GT36 - Low Downforce: dash "tacho" → "shift-lights"; rev
+- Mitsubishi Lancer R: dash "tacho" → "shift-lights"; rev
+- Mitsubishi Lancer RS: dash "tacho" → "shift-lights"; rev
+- Nissan 370Z Racing: dash "tacho" → "shift-lights"; rev
+- Nissan GT-R Nismo GT3: dash "tacho" → "shift-lights"; rev
+- Nissan R390 GT1: dash "tacho" → "shift-lights"; rev
+- Nissan R390 GT1 - Low Downforce: dash "tacho" → "shift-lights"; rev
+- Porsche 911 GT3 Cup: dash "tacho" → "shift-lights"; rev
+- Porsche 911 GT3 Cup 3.8: dash "tacho" → "shift-lights"; rev
+- Porsche 911 GT3 Cup 4.0: dash "tacho" → "shift-lights"; rev
+- Porsche 911 GT3 R: dash "tacho" → "shift-lights"; rev
+- Porsche 996 GT3 RSR: dash "tacho" → "shift-lights"; rev
+- Porsche 996 GT3 RSR - Low Downforce: dash "tacho" → "shift-lights"; rev
+- Puma P052: dash "tacho" → "shift-lights"; rev
+- Roco 001: dash "tacho" → "shift-lights"; rev
+- Sigma P1 G5: dash "tacho" → "shift-lights"; rev
+- Super Trophy Trucks: dash "tacho" → "shift-lights"; rev
+- Super Trophy Trucks SC: dash "tacho" → "shift-lights"; rev
+- Super V8: dash "tacho" → "shift-lights"; rev
+- Toyota GR Supra Racing: dash "tacho" → "shift-lights"; rev
+- Ultima GTR Race: dash "tacho" → "shift-lights"; rev
+- Volkswagen Constellation: dash "tacho" → "shift-lights"; rev
+- Volkswagen Polo RX: dash "tacho" → "shift-lights"; rev
+- Vulkan Truck: dash "tacho" → "shift-lights"; rev
+
 ## AMS2 1.6.9.96 (full build, 2026-09-29)
 
 **Changed (44):**

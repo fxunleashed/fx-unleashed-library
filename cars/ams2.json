@@ -4,7 +4,7 @@
  "simhubGame": "Automobilista2",
  "schema": 1,
  "game": "ams2",
- "updated": "2026-09-30T07:15:33+00:00",
+ "updated": "2026-09-30T07:22:06+00:00",
  "count": 466,
  "cars": [
   {
@@ -12791,7 +12791,9 @@
   {
    "carId": "Formula V8 Gen2",
    "aliases": [
-    "Formula_V8_G2"
+    "Formula_V8_G2",
+    "Formula V8 Gen2 Model1",
+    "Formula V8 Gen2 Model2"
    ],
    "manufacturer": "Reiza",
    "class": "Openwheel",

@@ -4,6 +4,11 @@ Newest first. Written by the extraction tools on every update.
 
 ## AMS2 1.6.9.96 (update, 2026-09-30)
 
+**Changed (1):**
+- Formula V8 Gen2: aliases ["Formula_V8_G2"] → ["Formula_V8_G2", "Formula V8 Gen2 Model1", "Formula V8 Gen2 Model2"]
+
+## AMS2 1.6.9.96 (update, 2026-09-30)
+
 **Changed (77):**
 - Alpine A424: dash "tacho" → "shift-lights"; rev
 - Alpine A424 - Low Downforce: dash "tacho" → "shift-lights"; rev

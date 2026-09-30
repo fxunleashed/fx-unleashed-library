@@ -32,7 +32,7 @@ def problems_in_car(c):
             if not 0 <= l.get("pos", -1) <= 1:
                 p.append("%s: rev light position %r" % (who, l.get("pos")))
             for st in l.get("stages", []):
-                if not (isinstance(st, list) and len(st) == 2 and isinstance(st[0], int) and COLOUR.match(str(st[1]))):
+                if not (isinstance(st, list) and len(st) == 2 and isinstance(st[0], int) and (st[1] is None or COLOUR.match(str(st[1])))):
                     p.append("%s: bad stage %r" % (who, st))
         if not rev.get("leds"):
             p.append("%s: rev without lights" % who)

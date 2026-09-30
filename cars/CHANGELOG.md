@@ -4,6 +4,30 @@ Newest first. Written by the extraction tools on every update.
 
 ## AMS2 1.6.9.96 (update, 2026-09-30)
 
+**Changed (20):**
+- Aston Martin Vantage GTE: rev
+- Aston Martin Vantage GTE - Low Downforce: rev
+- Audi R8 LMS GT3: rev
+- Audi R8 LMS GT3 evo II: rev
+- Audi R8 LMS GT3 evo II - Low Downforce: rev
+- BMW M Hybrid V8: rev
+- BMW M Hybrid V8 - Low Downforce: rev
+- Cadillac V-Series.R: rev
+- Cadillac V-Series.R - Low Downforce: rev
+- Formula USA 2023: rev
+- Formula USA 2023 - Short Oval: rev
+- Formula USA 2023 - Speedway: rev
+- Lamborghini Huracan GT3 EVO2: rev
+- Lamborghini Huracan GT3 EVO2 - Low Downforce: rev
+- MetalMoro MRX Duratec Turbo P2: rev
+- Oreca 07: rev
+- Oreca 07 - Low Downforce: rev
+- Porsche 935: rev
+- Porsche 963: rev
+- Porsche 963 - Low Downforce: rev
+
+## AMS2 1.6.9.96 (update, 2026-09-30)
+
 **Changed (1):**
 - Formula V8 Gen2: aliases ["Formula_V8_G2"] → ["Formula_V8_G2", "Formula V8 Gen2 Model1", "Formula V8 Gen2 Model2"]
 

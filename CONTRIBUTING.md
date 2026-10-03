@@ -1,7 +1,9 @@
 # Submitting a dash or screensaver
 
-**No Git? Use the form:** package it in the plugin (step 2 below: it writes `<id>.fxdash.zip`) and drag that file into a
-[Submit a dash](https://github.com/fxunleashed/fx-unleashed-library/issues/new?template=submit-dash.yml) issue.
+**No Git? Use the form:** package it in the plugin (step 2 below: it writes `<id>.fxdash.zip`) and attach that file to a
+[Submit a dash](https://github.com/fxunleashed/fx-unleashed-library/issues/new?template=submit-dash.yml) issue (drag it in, or pick
+it with the box's "selecting them" link; you need a free GitHub account, but no Git). The plugin and the whole setup are in the
+[guide](https://fxunleashed.com/start/); the steps in plain words are on [the site](https://fxunleashed.com/docs/library-submit/).
 A bot checks the package and, if it passes, **publishes it on the spot** (or comments with what to fix: edit the issue
 with the new package and it checks again). The steps below are for doing it yourself with a pull request.
 

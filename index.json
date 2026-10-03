@@ -1,7 +1,32 @@
 {
  "Schema": 1,
- "Generated": "2026-10-03T18:13:26Z",
+ "Generated": "2026-10-03T22:52:41Z",
  "Items": [
+  {
+   "Id": "submission-test-dash",
+   "Kind": "dash",
+   "Name": "Submission test dash",
+   "Author": "FX Unleashed",
+   "Description": "A throwaway dash used to test the library's submission form. It is removed again right after.",
+   "Version": "1.0.0",
+   "Games": [
+    "LMU"
+   ],
+   "Cars": [],
+   "Tags": [
+    "test"
+   ],
+   "License": "CC0-1.0",
+   "Created": "2026-10-03",
+   "Updated": "2026-10-03",
+   "FormatVersion": 2,
+   "MinPlugin": "0.3.0-beta.1",
+   "BytesStatic": 1049,
+   "BytesPerSecond": 15,
+   "Sha256": "a670fff4723cacdccde90a3044a7029979cecdc67c123ee0a90f2da54c81d924",
+   "DashUrl": "dashes/submission-test-dash/dash.json",
+   "PreviewUrl": "dashes/submission-test-dash/preview.png"
+  },
   {
    "Id": "slipstream",
    "Kind": "dash",

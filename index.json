@@ -1,28 +1,7 @@
 {
  "Schema": 1,
- "Generated": "2026-10-03T18:12:10Z",
+ "Generated": "2026-10-03T18:13:26Z",
  "Items": [
-  {
-   "Id": "gate-test",
-   "Kind": "dash",
-   "Name": "Gate test",
-   "Author": "Tester",
-   "Description": "Original hot-lapping dash: the gear in a brushed-metal halo whose ring glows with your delta, chamfered plates for delta, predicted, last and best lap, sector splits and a tyre heat map, with your settings at a glance.",
-   "Version": "1.0.0",
-   "Games": [],
-   "Cars": [],
-   "Tags": [],
-   "License": "CC0-1.0",
-   "Created": "2026-10-03",
-   "Updated": "2026-10-03",
-   "FormatVersion": 2,
-   "MinPlugin": "0.3.0-beta.1",
-   "BytesStatic": 49100,
-   "BytesPerSecond": 1111,
-   "Sha256": "7474a47afd739027315059619610ace19ce0dcbaa6db06544f14650d76282bf5",
-   "DashUrl": "dashes/gate-test/dash.json",
-   "PreviewUrl": "dashes/gate-test/preview.png"
-  },
   {
    "Id": "slipstream",
    "Kind": "dash",

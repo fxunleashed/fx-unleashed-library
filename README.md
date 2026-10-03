@@ -45,8 +45,9 @@ checks refuse changes to `cars/` in a submission). `tools/check_cars.py` checks 
 
 ## Submit one
 
-See [CONTRIBUTING.md](CONTRIBUTING.md): package it in the plugin (or with `fxdash package`), add the folder, open a
-pull request.
+Package it in the plugin (Dashes tab, **Package for the library**), then either attach the zipped folder to a
+[Submit a dash](https://github.com/fxunleashed/fx-unleashed-library/issues/new?template=submit-dash.yml) issue (no Git needed) or open a pull request: see
+[CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Licences
 

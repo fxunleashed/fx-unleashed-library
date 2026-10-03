@@ -1,0 +1,27 @@
+{
+  "Id": "nocturne-red",
+  "Kind": "dash",
+  "Name": "NOCTURNE Red",
+  "Author": "FX Unleashed",
+  "Description": "NOCTURNE in red: night endurance, modelled and rendered in 3D. A turbine lens for the gear and delta, glass fuel and energy cylinders, a timing tower with class colours, race clock, flags and a race-progress bar whose colour follows the day. Made for the screen's RAM drive.",
+  "Version": "1.0.0",
+  "Games": [
+    "LMU"
+  ],
+  "Cars": [],
+  "Tags": [
+    "endurance",
+    "night",
+    "3d",
+    "ram-drive",
+    "red"
+  ],
+  "License": "CC-BY-4.0",
+  "Created": "2026-10-02",
+  "Updated": "2026-10-02",
+  "FormatVersion": 2,
+  "MinPlugin": "0.3.0-beta.1",
+  "BytesStatic": 45371,
+  "BytesPerSecond": 1229,
+  "Sha256": "7c95a1d30082f10fea38c755af4ee70647187d61260b1e091cbbf1ed3e29db92"
+}

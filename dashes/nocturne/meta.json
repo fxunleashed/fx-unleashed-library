@@ -1,0 +1,27 @@
+{
+  "Id": "nocturne",
+  "Kind": "dash",
+  "Name": "NOCTURNE Green",
+  "Author": "FX Unleashed",
+  "Description": "Night endurance in neon green, modelled and rendered in 3D: a turbine lens for the gear and delta, glass fuel and energy cylinders, laps of fuel and stint, a timing tower with class colours, race clock, flags and a race-progress bar whose colour follows the day. Made for the screen's RAM drive.",
+  "Version": "1.0.0",
+  "Games": [
+    "LMU"
+  ],
+  "Cars": [],
+  "Tags": [
+    "endurance",
+    "night",
+    "3d",
+    "ram-drive",
+    "green"
+  ],
+  "License": "CC-BY-4.0",
+  "Created": "2026-10-02",
+  "Updated": "2026-10-02",
+  "FormatVersion": 2,
+  "MinPlugin": "0.3.0-beta.1",
+  "BytesStatic": 47374,
+  "BytesPerSecond": 1197,
+  "Sha256": "bc27f58f83ff38b75a5c9ae57c3893c44b092d31f6ce6453fb23b32fd90eded1"
+}

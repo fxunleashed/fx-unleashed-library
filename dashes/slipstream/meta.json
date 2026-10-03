@@ -1,0 +1,24 @@
+{
+  "Id": "slipstream",
+  "Kind": "dash",
+  "Name": "SLIPSTREAM",
+  "Author": "FX Unleashed",
+  "Description": "Original hot-lapping dash in a livery look: a huge gear, a hero delta with tape, predicted, last and best lap, sector splits and tyre temperatures as colour blocks, and a settings strip.",
+  "Version": "1.0.0",
+  "Games": [],
+  "Cars": [],
+  "Tags": [
+    "hot-lap",
+    "sectors",
+    "tyres",
+    "livery"
+  ],
+  "License": "CC-BY-4.0",
+  "Created": "2026-10-02",
+  "Updated": "2026-10-02",
+  "FormatVersion": 2,
+  "MinPlugin": "0.3.0-beta.1",
+  "BytesStatic": 35448,
+  "BytesPerSecond": 970,
+  "Sha256": "d97500201fcabf630d0fd17ed02d613e2fb759f48e7306feee172d1289bce967"
+}

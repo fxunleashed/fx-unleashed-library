@@ -1,5 +1,9 @@
 # Submitting a dash or screensaver
 
+**No Git? Use the form:** package it in the plugin (step 2 below), zip the folder it writes and attach it to a
+[Submit a dash](https://github.com/fxunleashed/fx-unleashed-library/issues/new?template=submit-dash.yml) issue. A maintainer takes it from there. The steps below are for
+doing it yourself with a pull request.
+
 1. **Make it** in the plugin's dash designer (Dashes tab > Edit in the designer) or as a JSON file. Get it to pass
    the designer's checks with no warnings: no flashing, text that fits, low USB traffic. The `create-dash` guide in
    the plugin repo explains the rules the wheel's screen imposes.

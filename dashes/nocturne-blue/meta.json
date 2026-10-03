@@ -1,0 +1,27 @@
+{
+  "Id": "nocturne-blue",
+  "Kind": "dash",
+  "Name": "NOCTURNE Blue",
+  "Author": "FX Unleashed",
+  "Description": "NOCTURNE in deep blue: night endurance, modelled and rendered in 3D. A turbine lens for the gear and delta, glass fuel and energy cylinders, a timing tower with class colours, race clock, flags and a race-progress bar whose colour follows the day. Made for the screen's RAM drive.",
+  "Version": "1.0.0",
+  "Games": [
+    "LMU"
+  ],
+  "Cars": [],
+  "Tags": [
+    "endurance",
+    "night",
+    "3d",
+    "ram-drive",
+    "blue"
+  ],
+  "License": "CC-BY-4.0",
+  "Created": "2026-10-02",
+  "Updated": "2026-10-02",
+  "FormatVersion": 2,
+  "MinPlugin": "0.3.0-beta.1",
+  "BytesStatic": 36285,
+  "BytesPerSecond": 1206,
+  "Sha256": "bae15bb1e5b96e4bbe0cac24beb52a8e26619d1760212ce992acfefcf5370f33"
+}

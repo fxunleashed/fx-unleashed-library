@@ -1,28 +1,24 @@
 {
   "Id": "apex",
   "Kind": "dash",
-  "Name": "Apex",
+  "Name": "APEX",
   "Author": "FX Unleashed",
-  "Description": "Sprint: huge gear, RPM bar that turns amber and red, a big delta with a wide bar, current and best lap.",
+  "Description": "Original hot-lapping dash: delta to best with a delta bar, predicted lap, live sector splits against your best lap, tyre temperatures and pressures, and your settings at a glance.",
   "Version": "1.0.0",
-  "Games": [
-    "IRacing",
-    "AssettoCorsaCompetizione",
-    "AssettoCorsa",
-    "Automobilista2"
-  ],
+  "Games": [],
   "Cars": [],
   "Tags": [
-    "sprint",
-    "minimal",
-    "shift"
+    "hot-lap",
+    "sectors",
+    "tyres",
+    "delta"
   ],
   "License": "CC-BY-4.0",
-  "Created": "2026-09-29",
-  "Updated": "2026-09-29",
+  "Created": "2026-10-02",
+  "Updated": "2026-10-02",
   "FormatVersion": 2,
   "MinPlugin": "0.3.0-beta.1",
-  "BytesStatic": 399,
-  "BytesPerSecond": 1111,
-  "Sha256": "115400cf5074844769dafc655bba04a8db299551377746aac3cfe5759fd26ec5"
+  "BytesStatic": 22051,
+  "BytesPerSecond": 1263,
+  "Sha256": "bd7571664262d34ba4945a8039a2f36b6e1e0cfc004c06c54689b51a0f3ba7aa"
 }

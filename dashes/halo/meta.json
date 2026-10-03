@@ -1,0 +1,24 @@
+{
+  "Id": "halo",
+  "Kind": "dash",
+  "Name": "HALO",
+  "Author": "FX Unleashed",
+  "Description": "Original hot-lapping dash: the gear in a brushed-metal halo whose ring glows with your delta, chamfered plates for delta, predicted, last and best lap, sector splits and a tyre heat map, with your settings at a glance.",
+  "Version": "1.0.0",
+  "Games": [],
+  "Cars": [],
+  "Tags": [
+    "hot-lap",
+    "sectors",
+    "tyres",
+    "metal"
+  ],
+  "License": "CC-BY-4.0",
+  "Created": "2026-10-02",
+  "Updated": "2026-10-02",
+  "FormatVersion": 2,
+  "MinPlugin": "0.3.0-beta.1",
+  "BytesStatic": 49100,
+  "BytesPerSecond": 1111,
+  "Sha256": "9a5685cfce5276a4eb162a2347361e92fdc00475effefe4afbca6319bcc5a273"
+}

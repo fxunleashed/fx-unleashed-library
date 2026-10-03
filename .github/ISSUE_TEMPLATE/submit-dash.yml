@@ -1,0 +1,44 @@
+name: Submit a dash or screensaver
+description: Share yours with everyone. No Git needed: attach the package the plugin made.
+title: "Submit: "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **In the plugin:** Dashes tab, pick your dash, **Package for the library**. It writes a folder
+        (`dashes/<id>` or `savers/<id>`) with `dash.json`, `meta.json` and `preview.png`. Zip that folder and drag the
+        `.zip` into the box below.
+
+        A maintainer looks at the preview and the licence, then adds it. It shows up on fxunleashed.com and in the
+        plugin right after, and you're credited as its author.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: What the dash or screensaver is called.
+    validations:
+      required: true
+  - type: textarea
+    id: package
+    attributes:
+      label: Package (.zip)
+      description: Drag the zipped folder here. Nothing else.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Based on someone else's work?
+      description: Leave empty if it's all yours. Otherwise the link to the original, and to where its author agreed to it being shared.
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Rights and rules
+      options:
+        - label: I made this, or its author gave me permission to share it under the licence in meta.json.
+          required: true
+        - label: It has no scripts (`js:`) and no logos or pictures I don't have the right to share.
+          required: true
+        - label: I read the [terms](https://github.com/fxunleashed/fx-unleashed-library/blob/main/TERMS.md).
+          required: true

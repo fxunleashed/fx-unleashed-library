@@ -1,37 +1,171 @@
 {
  "Schema": 1,
- "Generated": "2026-09-29T20:27:40Z",
+ "Generated": "2026-10-02T22:44:22Z",
  "Items": [
   {
-   "Id": "stint",
+   "Id": "slipstream",
    "Kind": "dash",
-   "Name": "Stint",
+   "Name": "SLIPSTREAM",
    "Author": "FX Unleashed",
-   "Description": "Endurance: big gear, delta with a bar, lap times, fuel with laps left, TC / ABS / MAP. Brake bias pops up when you change it.",
+   "Description": "Original hot-lapping dash in a livery look: a huge gear, a hero delta with tape, predicted, last and best lap, sector splits and tyre temperatures as colour blocks, and a settings strip.",
+   "Version": "1.0.0",
+   "Games": [],
+   "Cars": [],
+   "Tags": [
+    "hot-lap",
+    "sectors",
+    "tyres",
+    "livery"
+   ],
+   "License": "CC-BY-4.0",
+   "Created": "2026-10-02",
+   "Updated": "2026-10-02",
+   "FormatVersion": 2,
+   "MinPlugin": "0.3.0-beta.1",
+   "BytesStatic": 35448,
+   "BytesPerSecond": 970,
+   "Sha256": "d97500201fcabf630d0fd17ed02d613e2fb759f48e7306feee172d1289bce967",
+   "DashUrl": "dashes/slipstream/dash.json",
+   "PreviewUrl": "dashes/slipstream/preview.png"
+  },
+  {
+   "Id": "nocturne-red",
+   "Kind": "dash",
+   "Name": "NOCTURNE Red",
+   "Author": "FX Unleashed",
+   "Description": "NOCTURNE in red: night endurance, modelled and rendered in 3D. A turbine lens for the gear and delta, glass fuel and energy cylinders, a timing tower with class colours, race clock, flags and a race-progress bar whose colour follows the day. Made for the screen's RAM drive.",
    "Version": "1.0.0",
    "Games": [
-    "LMU",
-    "IRacing",
-    "AssettoCorsaCompetizione",
-    "RFactor2"
+    "LMU"
    ],
    "Cars": [],
    "Tags": [
     "endurance",
-    "gt",
-    "prototype",
-    "fuel"
+    "night",
+    "3d",
+    "ram-drive",
+    "red"
    ],
    "License": "CC-BY-4.0",
-   "Created": "2026-09-29",
-   "Updated": "2026-09-29",
+   "Created": "2026-10-02",
+   "Updated": "2026-10-02",
    "FormatVersion": 2,
    "MinPlugin": "0.3.0-beta.1",
-   "BytesStatic": 1239,
-   "BytesPerSecond": 410,
-   "Sha256": "563d51108afe668c2b938f9fab9be60e9501836ea649e2786d484baa86e7bf1a",
-   "DashUrl": "dashes/stint/dash.json",
-   "PreviewUrl": "dashes/stint/preview.png"
+   "BytesStatic": 45371,
+   "BytesPerSecond": 1229,
+   "Sha256": "7c95a1d30082f10fea38c755af4ee70647187d61260b1e091cbbf1ed3e29db92",
+   "DashUrl": "dashes/nocturne-red/dash.json",
+   "PreviewUrl": "dashes/nocturne-red/preview.png"
+  },
+  {
+   "Id": "nocturne",
+   "Kind": "dash",
+   "Name": "NOCTURNE Green",
+   "Author": "FX Unleashed",
+   "Description": "Night endurance in neon green, modelled and rendered in 3D: a turbine lens for the gear and delta, glass fuel and energy cylinders, laps of fuel and stint, a timing tower with class colours, race clock, flags and a race-progress bar whose colour follows the day. Made for the screen's RAM drive.",
+   "Version": "1.0.0",
+   "Games": [
+    "LMU"
+   ],
+   "Cars": [],
+   "Tags": [
+    "endurance",
+    "night",
+    "3d",
+    "ram-drive",
+    "green"
+   ],
+   "License": "CC-BY-4.0",
+   "Created": "2026-10-02",
+   "Updated": "2026-10-02",
+   "FormatVersion": 2,
+   "MinPlugin": "0.3.0-beta.1",
+   "BytesStatic": 47374,
+   "BytesPerSecond": 1197,
+   "Sha256": "bc27f58f83ff38b75a5c9ae57c3893c44b092d31f6ce6453fb23b32fd90eded1",
+   "DashUrl": "dashes/nocturne/dash.json",
+   "PreviewUrl": "dashes/nocturne/preview.png"
+  },
+  {
+   "Id": "nocturne-blue",
+   "Kind": "dash",
+   "Name": "NOCTURNE Blue",
+   "Author": "FX Unleashed",
+   "Description": "NOCTURNE in deep blue: night endurance, modelled and rendered in 3D. A turbine lens for the gear and delta, glass fuel and energy cylinders, a timing tower with class colours, race clock, flags and a race-progress bar whose colour follows the day. Made for the screen's RAM drive.",
+   "Version": "1.0.0",
+   "Games": [
+    "LMU"
+   ],
+   "Cars": [],
+   "Tags": [
+    "endurance",
+    "night",
+    "3d",
+    "ram-drive",
+    "blue"
+   ],
+   "License": "CC-BY-4.0",
+   "Created": "2026-10-02",
+   "Updated": "2026-10-02",
+   "FormatVersion": 2,
+   "MinPlugin": "0.3.0-beta.1",
+   "BytesStatic": 36285,
+   "BytesPerSecond": 1206,
+   "Sha256": "bae15bb1e5b96e4bbe0cac24beb52a8e26619d1760212ce992acfefcf5370f33",
+   "DashUrl": "dashes/nocturne-blue/dash.json",
+   "PreviewUrl": "dashes/nocturne-blue/preview.png"
+  },
+  {
+   "Id": "halo",
+   "Kind": "dash",
+   "Name": "HALO",
+   "Author": "FX Unleashed",
+   "Description": "Original hot-lapping dash: the gear in a brushed-metal halo whose ring glows with your delta, chamfered plates for delta, predicted, last and best lap, sector splits and a tyre heat map, with your settings at a glance.",
+   "Version": "1.0.0",
+   "Games": [],
+   "Cars": [],
+   "Tags": [
+    "hot-lap",
+    "sectors",
+    "tyres",
+    "metal"
+   ],
+   "License": "CC-BY-4.0",
+   "Created": "2026-10-02",
+   "Updated": "2026-10-02",
+   "FormatVersion": 2,
+   "MinPlugin": "0.3.0-beta.1",
+   "BytesStatic": 49100,
+   "BytesPerSecond": 1111,
+   "Sha256": "9a5685cfce5276a4eb162a2347361e92fdc00475effefe4afbca6319bcc5a273",
+   "DashUrl": "dashes/halo/dash.json",
+   "PreviewUrl": "dashes/halo/preview.png"
+  },
+  {
+   "Id": "apex",
+   "Kind": "dash",
+   "Name": "APEX",
+   "Author": "FX Unleashed",
+   "Description": "Original hot-lapping dash: delta to best with a delta bar, predicted lap, live sector splits against your best lap, tyre temperatures and pressures, and your settings at a glance.",
+   "Version": "1.0.0",
+   "Games": [],
+   "Cars": [],
+   "Tags": [
+    "hot-lap",
+    "sectors",
+    "tyres",
+    "delta"
+   ],
+   "License": "CC-BY-4.0",
+   "Created": "2026-10-02",
+   "Updated": "2026-10-02",
+   "FormatVersion": 2,
+   "MinPlugin": "0.3.0-beta.1",
+   "BytesStatic": 22051,
+   "BytesPerSecond": 1263,
+   "Sha256": "bd7571664262d34ba4945a8039a2f36b6e1e0cfc004c06c54689b51a0f3ba7aa",
+   "DashUrl": "dashes/apex/dash.json",
+   "PreviewUrl": "dashes/apex/preview.png"
   },
   {
    "Id": "paddock-clock",
@@ -56,65 +190,6 @@
    "Sha256": "3c0eaf2f9d56e34deabfe45531b6008ac00d38d2901ffa6087a058134df1b5c8",
    "DashUrl": "savers/paddock-clock/dash.json",
    "PreviewUrl": "savers/paddock-clock/preview.png"
-  },
-  {
-   "Id": "night",
-   "Kind": "dash",
-   "Name": "Night",
-   "Author": "FX Unleashed",
-   "Description": "Low glare for night stints: dim red on black, only what you need. Goes well with night mode.",
-   "Version": "1.0.0",
-   "Games": [
-    "LMU",
-    "IRacing",
-    "AssettoCorsaCompetizione"
-   ],
-   "Cars": [],
-   "Tags": [
-    "endurance",
-    "night",
-    "low-glare"
-   ],
-   "License": "CC-BY-4.0",
-   "Created": "2026-09-29",
-   "Updated": "2026-09-29",
-   "FormatVersion": 2,
-   "MinPlugin": "0.3.0-beta.1",
-   "BytesStatic": 402,
-   "BytesPerSecond": 830,
-   "Sha256": "1841d6013320f2f288c96c4e3658fc27778bd8f8f94a3ff037f91d11e01e03d0",
-   "DashUrl": "dashes/night/dash.json",
-   "PreviewUrl": "dashes/night/preview.png"
-  },
-  {
-   "Id": "apex",
-   "Kind": "dash",
-   "Name": "Apex",
-   "Author": "FX Unleashed",
-   "Description": "Sprint: huge gear, RPM bar that turns amber and red, a big delta with a wide bar, current and best lap.",
-   "Version": "1.0.0",
-   "Games": [
-    "IRacing",
-    "AssettoCorsaCompetizione",
-    "AssettoCorsa",
-    "Automobilista2"
-   ],
-   "Cars": [],
-   "Tags": [
-    "sprint",
-    "minimal",
-    "shift"
-   ],
-   "License": "CC-BY-4.0",
-   "Created": "2026-09-29",
-   "Updated": "2026-09-29",
-   "FormatVersion": 2,
-   "MinPlugin": "0.3.0-beta.1",
-   "BytesStatic": 399,
-   "BytesPerSecond": 1111,
-   "Sha256": "115400cf5074844769dafc655bba04a8db299551377746aac3cfe5759fd26ec5",
-   "DashUrl": "dashes/apex/dash.json",
-   "PreviewUrl": "dashes/apex/preview.png"
   }
  ]
 }

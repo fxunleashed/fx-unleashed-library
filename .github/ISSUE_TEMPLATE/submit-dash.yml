@@ -6,7 +6,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        **In the plugin:** Dashes tab, pick your dash, **Package for the library**. It writes `<id>.fxdash.zip`:
+        **In the plugin:** a dash: Dashes tab, pick your dash, **Package for the library**. A screensaver: Idle tab, **Share…** on its tile.
+        Either way it writes `<id>.fxdash.zip`:
         attach that file to the box below (drag it in, or click "selecting them" under the box and pick it), tick the three
         boxes and submit.
 
@@ -19,6 +20,16 @@ body:
     attributes:
       label: Name
       description: What the dash or screensaver is called.
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What are you sharing?
+      description: A dash is shown on the wheel while you race. A screensaver is shown between sessions (the plugin's Idle tab).
+      options:
+        - A dash
+        - A screensaver
     validations:
       required: true
   - type: textarea

@@ -52,6 +52,12 @@ def find_zip(text):
     return m.group(0) if m else None
 
 
+def shared_kind(form):
+    """What the form says is being shared: "dash", "saver", or None (an older form without the question)."""
+    text = next((v for k, v in form.items() if k.lower().startswith("what are you sharing")), "").strip().lower()
+    return "saver" if "screensaver" in text else "dash" if "dash" in text else None
+
+
 def rights_ticked(text):
     boxes = re.findall(r"^\s*- \[( |x|X)\]", text or "", re.M)
     return bool(boxes) and all(b.lower() == "x" for b in boxes)
@@ -118,7 +124,8 @@ def main(argv):
     url, zip_path = find_zip(package_text), arg("--zip-file")
     if not url and not zip_path:
         say("I couldn't find a `.zip` attached in the **Package** box. In the plugin: Dashes tab, pick your dash, **Package for the "
-            "library**: it writes a `.fxdash.zip`. Drag that file into the box (edit the issue) and I check it again when you save.",
+            "library**: it writes a `.fxdash.zip` (for a screensaver: the Idle tab, **Share…** on its tile). Attach that file to the box "
+            "(edit the issue) and I check it again when you save.",
             needs_changes=True)
         return 0
 
@@ -134,6 +141,15 @@ def main(argv):
         return 0
     except Exception as ex:  # a failed download is the submitter's to retry, not a crash
         say(f"I couldn't fetch the attachment ({type(ex).__name__}). Attach the `.zip` again by editing the issue and I try again.", needs_changes=True)
+        return 0
+
+    said = shared_kind(form)
+    made = "dash" if next(iter(changes)).startswith("dashes/") else "saver"
+    if said and said != made:
+        names = {"dash": "a dash", "saver": "a screensaver"}
+        say(f"The form says you are sharing **{names[said]}**, but the package was made as **{names[made]}**. In the plugin, the Package "
+            "dialog's **What is it?** box sets this (a screensaver is packaged from the Idle tab: **Share…** on its tile). Package it again "
+            "with the right choice, attach the new `.zip` by editing the issue, and I check it again when you save.", needs_changes=True)
         return 0
 
     maintainer = False if dry else ghutil.is_maintainer(repo, author)

@@ -10,7 +10,8 @@ with the new package and it checks again). The steps below are for doing it your
 1. **Make it** in the plugin's dash designer (Dashes tab > Edit in the designer) or as a JSON file. Get it to pass
    the designer's checks with no warnings: no flashing, text that fits, low USB traffic. The `create-dash` guide in
    the plugin repo explains the rules the wheel's screen imposes.
-2. **Package it:** in the plugin, pick your dash on the Dashes tab and press **Package for the library**. Fill in
+2. **Package it:** in the plugin, pick your dash on the Dashes tab and press **Package for the library** (a screensaver: the Idle tab,
+   **Share...** on its tile; the dialog's **What is it?** box says which, and the form asks too). Fill in
    the name, games, tags and licence, and confirm it's your work (or that you have permission). The plugin writes
    `LibraryPackages\dashes\<id>\` with `dash.json`, `meta.json` (with the measured cost) and `preview.png`.
    Or from the command line:

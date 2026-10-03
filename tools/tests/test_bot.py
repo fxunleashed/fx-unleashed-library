@@ -47,6 +47,35 @@ class Bot(unittest.TestCase):
         self.assertTrue(os.path.isdir(os.path.join(self.root, "dashes", "night-stint")))
         self.assertEqual(gate.load_owners(self.root)["Items"]["dashes/night-stint"]["Owner"], "bob")
 
+    def kind_form(self, said):
+        return test_ingest.IssueForm.BODY.replace("### Package (.zip)", f"### What are you sharing?\n\n{said}\n\n### Package (.zip)")
+
+    def test_a_screensaver_is_published_into_savers(self):
+        self.set_body(self.kind_form("A screensaver"))
+        code, out = self.run_bot(test_ingest.source_files("night-clock", kind="saver"))
+        self.assertEqual(code, 0)
+        self.assertIn("would publish", out)
+        self.assertTrue(os.path.isdir(os.path.join(self.root, "savers", "night-clock")))
+
+    def test_the_form_says_screensaver_but_the_package_is_a_dash(self):
+        self.set_body(self.kind_form("A screensaver"))
+        code, out = self.run_bot(test_ingest.source_files("night-stint"))
+        self.assertEqual(code, 0)
+        self.assertIn("a screensaver", out)
+        self.assertIn("made as **a dash**", out)
+        self.assertFalse(os.path.exists(os.path.join(self.root, "dashes", "night-stint")))
+
+    def test_the_form_says_dash_but_the_package_is_a_screensaver(self):
+        self.set_body(self.kind_form("A dash"))
+        code, out = self.run_bot(test_ingest.source_files("night-clock", kind="saver"))
+        self.assertIn("made as **a screensaver**", out)
+        self.assertFalse(os.path.exists(os.path.join(self.root, "savers", "night-clock")))
+
+    def test_an_older_form_without_the_question_still_works(self):
+        self.assertIsNone(bot.shared_kind({"Name": "x"}))
+        self.assertEqual(bot.shared_kind({"What are you sharing?": "A screensaver"}), "saver")
+        self.assertEqual(bot.shared_kind({"What are you sharing?": "A dash"}), "dash")
+
     def test_a_broken_package_says_what_is_wrong(self):
         f = test_ingest.source_files("night-stint")
         f["preview.png"] = b"nope"

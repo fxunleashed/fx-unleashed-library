@@ -3,11 +3,11 @@
  "games": {
   "ams2": {
    "file": "cars/ams2.json",
-   "sha256": "2ea6d17c13805823263b411dcdca509e06cb9936d6a2c11fd9d18d27396ac1b5",
+   "sha256": "247749e1ae0b8763a3ad0f6c99d90dd60e5bdc4dc2030843cce504ab3e15e96f",
    "count": 466,
    "simhubGame": "Automobilista2",
    "gameVersion": "1.6.9.96",
-   "updated": "2026-09-30T07:49:36+00:00"
+   "updated": "2026-10-03T01:45:45+00:00"
   }
  }
 }

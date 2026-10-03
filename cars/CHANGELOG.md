@@ -2,6 +2,30 @@
 
 Newest first. Written by the extraction tools on every update.
 
+## AMS2 1.6.9.96 (update, 2026-10-02)
+
+**Changed (20):**
+- Aston Martin DB11 Racing: rev
+- BMW M4 GT4: rev
+- BMW M4 SC: rev
+- Dallara SP1: rev
+- Dallara SP1 - Low Downforce: rev
+- Ferrari 458 Italia: rev
+- Jaguar F-Type SVR Racing: rev
+- Lamborghini Revuelto: rev
+- Lamborghini Veneno Roadster: rev
+- Ligier JS P320: rev; limiter
+- Lola B05/40 Turbo: rev
+- Lola B05/40 Turbo - Low Downforce: rev
+- Lola B05/40 V8: rev
+- Lola B05/40 V8 - Low Downforce: rev
+- Maserati MC12 GT1: rev; limiter
+- Maserati MC12 GT1 - Low Downforce: rev; limiter
+- McLaren F1 GTR: rev
+- McLaren F1 GTR - Low Downforce: rev
+- Mitsubishi Lancer Evo10 RX: rev
+- Superkart 250cc: rev
+
 ## AMS2 1.6.9.96 (update, 2026-09-30)
 
 **Changed (20):**

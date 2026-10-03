@@ -48,7 +48,7 @@ checks refuse changes to `cars/` in a submission). `tools/check_cars.py` checks 
 Package it in the plugin (Dashes tab, **Package for the library**: it writes `<id>.fxdash.zip`), then attach that file to a
 [Submit a dash](https://github.com/fxunleashed/fx-unleashed-library/issues/new?template=submit-dash.yml) issue (drag it in, or pick
 it with the box's "selecting them" link). You need a free GitHub account, but no Git.
-A bot checks it and, if it passes, publishes it on the spot. The full walk-through, from the wheel app to making your own dash:
+A bot checks it and, if it passes, publishes it on the spot. The full walk-through, from the custom firmware to making your own dash:
 [fxunleashed.com/docs/library-submit](https://fxunleashed.com/docs/library-submit/). Or open a pull request yourself: a check runs on it and merges it
 when every rule holds. See [CONTRIBUTING.md](CONTRIBUTING.md).
 

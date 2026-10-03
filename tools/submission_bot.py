@@ -172,8 +172,20 @@ def main(argv):
         comment(issue, f"Updated the pull request #{existing[0]['number']} with the new package.", dry)
         return 0
     sh("gh", "label", "create", "submission", "--color", "e11d2e", check=False)
-    pr = sh("gh", "pr", "create", "--base", "main", "--head", branch, "--title", f"Add {res['name']} ({res['kind']})",
-            "--body-file", body_file, "--label", "submission")
+    try:
+        pr = sh("gh", "pr", "create", "--base", "main", "--head", branch, "--title", f"Add {res['name']} ({res['kind']})",
+                "--body-file", body_file, "--label", "submission")
+    except subprocess.CalledProcessError as ex:
+        # Actions may not be allowed to open pull requests (an organization setting): the checked item is on its branch,
+        # so a maintainer opens the pull request with one click instead.
+        print("gh pr create failed:", (ex.stderr or "").strip(), file=sys.stderr)
+        sh("gh", "label", "create", "ready", "--color", "0e8a16", check=False)
+        sh("gh", "issue", "edit", str(issue), "--add-label", "ready", check=False)
+        comment(issue, "The package passed every check and is on the branch `" + branch + "`.\n\n"
+                       f"**Maintainer:** [open the pull request](https://github.com/{repo}/compare/main...{branch}?expand=1) "
+                       "(the preview is in the files), check the preview and the licence, and merge. The submitter is credited as the author.\n\n"
+                       + text, dry)
+        return 0
     comment(issue, f"The package passed every check and is now a pull request: {pr}\n\n"
                    "A maintainer will look at the preview and the licence, and merge it. You will be credited as its author.", dry)
     return 0

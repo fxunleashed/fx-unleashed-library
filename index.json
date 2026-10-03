@@ -1,7 +1,30 @@
 {
  "Schema": 1,
- "Generated": "2026-10-03T22:52:41Z",
+ "Generated": "2026-10-03T22:54:38Z",
  "Items": [
+  {
+   "Id": "submission-test-screensaver",
+   "Kind": "saver",
+   "Name": "Submission test screensaver",
+   "Author": "FX Unleashed",
+   "Description": "A throwaway screensaver used to test the library's submission form. It is removed again right after.",
+   "Version": "1.0.0",
+   "Games": [],
+   "Cars": [],
+   "Tags": [
+    "test"
+   ],
+   "License": "CC0-1.0",
+   "Created": "2026-10-03",
+   "Updated": "2026-10-03",
+   "FormatVersion": 2,
+   "MinPlugin": "0.3.0-beta.1",
+   "BytesStatic": 1122,
+   "BytesPerSecond": 0,
+   "Sha256": "d8059795c83801b96e3d8eb0ee49b33567531142f6fec94686e990ab6cf0a422",
+   "DashUrl": "savers/submission-test-screensaver/dash.json",
+   "PreviewUrl": "savers/submission-test-screensaver/preview.png"
+  },
   {
    "Id": "submission-test-dash",
    "Kind": "dash",

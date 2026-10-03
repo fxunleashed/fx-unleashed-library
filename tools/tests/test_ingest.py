@@ -201,14 +201,6 @@ _No response_
     def test_no_attachment(self):
         self.assertIsNone(bot.find_zip("I forgot to attach it"))
 
-    def test_pr_body(self):
-        res = {"id": "night-stint", "kind": "dash", "folder": "dashes/night-stint", "name": "Night Stint", "author": "T", "license": "CC0-1.0",
-               "bytes_per_second": 970, "source": None, "permission": None}
-        text = bot.pr_body(7, "tester", res, "https://example.com/theirs", "fxunleashed/fx-unleashed-library", "submission/7-night-stint")
-        self.assertIn("Closes #7", text)
-        self.assertIn("raw.githubusercontent.com/fxunleashed/fx-unleashed-library/submission/7-night-stint/dashes/night-stint/preview.png", text)
-        self.assertIn("no `Source`/`Permission`", text)  # said "based on", meta has no Source: flagged
-
 
 if __name__ == "__main__":
     unittest.main()

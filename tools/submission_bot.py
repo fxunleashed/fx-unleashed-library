@@ -1,22 +1,23 @@
 #!/usr/bin/env python3
-"""Turns a "Submit a dash or screensaver" issue into a pull request, so nobody needs Git to contribute.
+"""Publishes a dash from a "Submit a dash or screensaver" issue, so nobody needs Git to contribute.
 
-Runs in .github/workflows/submission.yml when such an issue is opened (or when the submitter edits it after a refusal, or a maintainer adds the label `ingest`).
-Reads the issue form, downloads the attached package, validates it with tools/ingest_submission.py, and either
- - opens a pull request that adds the item (a maintainer looks at the preview and the licence, then merges), or
- - comments with exactly what is wrong, so the submitter can fix it and edit the issue.
+Runs in .github/workflows/submission.yml when such an issue is opened, when the submitter edits it after a refusal (the label
+`needs-changes` marks those), or when a maintainer adds the label `ingest`. It reads the issue form, downloads the attached
+package, and asks tools/gate.py (the same rules that merge pull requests) what to do:
+  publish  the item is committed to main with owners.json and index.json, the issue gets the link and is closed;
+  fix      the issue gets a comment saying exactly what is wrong; editing the issue runs the checks again;
+  review   a person must look (someone else's item, too many items...): the checked item is left on a branch, with a link.
 
-The issue text and the package are untrusted: the text is only parsed (never run, never put in a shell), the package is
-only read by ingest_submission.py, and the only address ever fetched is a GitHub attachment.
+The issue text and the package are untrusted: the text is only parsed (never run, never put in a shell), the package is only
+read as bytes by tools/ingest_submission.py, and the only address ever fetched is a GitHub attachment.
 
-    submission_bot.py                       in the workflow (needs GH_TOKEN, ISSUE_NUMBER, ISSUE_BODY, ISSUE_AUTHOR)
-    submission_bot.py --dry-run --body-file ISSUE.md --zip-file PKG.zip    prints what it would do, writes only to a scratch root
+    submission_bot.py                       in the workflow (needs GH_TOKEN, REPO, ISSUE_NUMBER, ISSUE_BODY, ISSUE_AUTHOR)
+    submission_bot.py --dry-run --root DIR --body-file ISSUE.md --zip-file PKG.zip      decides and prints; writes only to DIR
 Standard library, plus the `gh` and `git` programs the runner has.
 """
 import json
 import os
 import re
-import subprocess
 import sys
 import tempfile
 import urllib.request
@@ -24,6 +25,8 @@ import urllib.request
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import build_index  # noqa: E402
+import gate  # noqa: E402
+import ghutil  # noqa: E402
 import ingest_submission  # noqa: E402
 
 ATTACHMENT = re.compile(r"https://github\.com/(?:user-attachments/files/\d+/|[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+/files/\d+/)[^\s)\]>\"']+\.zip", re.I)
@@ -68,43 +71,21 @@ def download(url, dest, limit=ingest_submission.MAX_ZIP):
             f.write(chunk)
 
 
-def pr_body(issue, author, res, source_field, repo, branch):
-    prev = f"https://raw.githubusercontent.com/{repo}/{branch}/{res['folder']}/preview.png"
-    rows = [
-        ("Name", res.get("name")), ("Id", f"`{res['id']}` ({res['kind']})"), ("Author", res.get("author")),
-        ("Licence", res.get("license")),
-        ("Cost on the wheel", f"about {res['bytes_per_second'] / 1000:.1f} KB/s" if res.get("bytes_per_second") else "not measured"),
-        ("Based on", res.get("source") or (source_field.strip() if source_field and source_field.strip() not in ("", "_No response_") else "its author's own work")),
-    ]
-    out = [f"Submitted by @{author} in #{issue}.", "", "| | |", "|---|---|"] + [f"| {k} | {v} |" for k, v in rows]
-    out += ["", f"![preview]({prev})", "",
-            "Automatic checks passed: files and sizes, the dash format, no scripts, the preview (800x480) and the checksum.", ""]
-    if source_field and source_field.strip() not in ("", "_No response_") and not res.get("source"):
-        out += ["**Check this:** the submitter says it is based on someone else's work, but `meta.json` has no `Source`/`Permission`.", ""]
-    if res.get("source"):
-        out += [f"**Converted work.** Permission recorded: {res.get('permission')}. Check that the link says what it should.", ""]
-    out += ["**Maintainer:** look at the preview, the licence and the rights (TERMS.md). Merge to publish: `index.json` is rebuilt "
-            "automatically and the item shows up on fxunleashed.com and in the plugin.", "", f"Closes #{issue}"]
-    return "\n".join(out)
-
-
-def sh(*args, check=True, cwd=None, dry=False):
-    if dry:
-        print("  [dry-run]", " ".join(args))
-        return ""
-    r = subprocess.run(args, check=check, cwd=cwd, capture_output=True, text=True)
-    return r.stdout.strip()
-
-
-def comment(issue, text, dry, needs_changes=False):
-    """Says something on the issue. needs_changes labels it so that the submitter's next edit runs the checks again."""
-    if dry:
-        print("--- comment on the issue:\n" + text)
-        return
-    sh("gh", "issue", "comment", str(issue), "--body", text)
-    if needs_changes:
-        sh("gh", "label", "create", "needs-changes", "--color", "fbca04", check=False)
-        sh("gh", "issue", "edit", str(issue), "--add-label", "needs-changes", check=False)
+def changes_from_package(files):
+    """The package's three files as library file changes, under the folder its own meta.json names."""
+    try:
+        meta = json.loads(files["meta.json"].decode("utf-8-sig"))
+    except Exception:
+        raise ingest_submission.Refused("meta.json isn't JSON")
+    if not isinstance(meta, dict):
+        raise ingest_submission.Refused("meta.json isn't a meta file")
+    item_id, kind = meta.get("Id"), meta.get("Kind", "dash")
+    if kind not in ("dash", "saver"):
+        raise ingest_submission.Refused('meta Kind must be "dash" or "saver"')
+    if not isinstance(item_id, str) or not build_index.ID_RE.match(item_id):
+        raise ingest_submission.Refused("meta Id must be lower case letters, digits and dashes (2-64)")
+    folder = ("dashes" if kind == "dash" else "savers") + "/" + item_id
+    return {f"{folder}/{name}": data for name, data in files.items()}
 
 
 def main(argv):
@@ -116,24 +97,29 @@ def main(argv):
     body = open(arg("--body-file"), encoding="utf-8").read() if arg("--body-file") else os.environ.get("ISSUE_BODY", "")
     root = arg("--root") or build_index.ROOT
     if dry and not arg("--root"):
-        print("--dry-run needs --root <a scratch copy of the library>: ingesting writes the item folder there")
+        print("--dry-run needs --root <a scratch copy of the library>")
         return 2
+
+    def say(text, needs_changes=False, labels=()):
+        if dry:
+            print("--- comment on the issue:\n" + text)
+            return
+        ghutil.sticky_comment(repo, issue, text)
+        ghutil.set_labels("issue", issue, add=(["needs-changes"] if needs_changes else []) + list(labels),
+                          remove=[] if needs_changes else ["needs-changes"])
 
     form = parse_form(body)
     package_text = next((v for k, v in form.items() if k.lower().startswith("package")), "")
     rights = next((v for k, v in form.items() if k.lower().startswith("rights")), "")
-    source_field = next((v for k, v in form.items() if k.lower().startswith("based on")), "")
-
     if not rights_ticked(rights):
-        comment(issue, "Thanks! Before this can go further, all three boxes under **Rights and rules** need to be ticked "
-                       "(edit the issue above). When you save the edit, I check the package again.", dry, needs_changes=True)
+        say("Thanks! Before this can go further, all three boxes under **Rights and rules** need to be ticked "
+            "(edit the issue above). When you save the edit, I check the package again.", needs_changes=True)
         return 0
-    url = find_zip(package_text)
-    zip_path = arg("--zip-file")
+    url, zip_path = find_zip(package_text), arg("--zip-file")
     if not url and not zip_path:
-        comment(issue, "I couldn't find a `.zip` attached in the **Package** box. In the plugin: Dashes tab, pick your dash, "
-                       "**Package for the library**: it writes a folder and a `.zip` of it. Drag that `.zip` into the box (edit the issue), "
-                       "and I check it again when you save.", dry, needs_changes=True)
+        say("I couldn't find a `.zip` attached in the **Package** box. In the plugin: Dashes tab, pick your dash, **Package for the "
+            "library**: it writes a `.fxdash.zip`. Drag that file into the box (edit the issue) and I check it again when you save.",
+            needs_changes=True)
         return 0
 
     work = tempfile.mkdtemp(prefix="submission-")
@@ -141,53 +127,57 @@ def main(argv):
         if not zip_path:
             zip_path = os.path.join(work, "package.zip")
             download(url, zip_path)
-        res = ingest_submission.ingest(zip_path, root)
+        changes = changes_from_package(ingest_submission.read_package(zip_path))
     except ingest_submission.Refused as ex:
-        res = {"ok": False, "problems": [str(ex)]}
+        say("The package didn't pass the checks:\n\n- " + str(ex) + "\n\nFix that (the plugin's **Package for the library** makes a "
+            "package that passes), attach the new `.zip` by editing the issue, and I check it again when you save.", needs_changes=True)
+        return 0
     except Exception as ex:  # a failed download is the submitter's to retry, not a crash
-        res = {"ok": False, "problems": [f"couldn't fetch the attachment ({type(ex).__name__}); attach it again"]}
-
-    if not res["ok"]:
-        comment(issue, "The package didn't pass the checks:\n\n" + "\n".join(f"- {p}" for p in res["problems"]) +
-                       "\n\nFix that (the plugin's **Package for the library** makes a package that passes), attach the new `.zip` by editing "
-                       "the issue, and I check it again when you save.", dry, needs_changes=True)
+        say(f"I couldn't fetch the attachment ({type(ex).__name__}). Attach the `.zip` again by editing the issue and I try again.", needs_changes=True)
         return 0
 
-    branch = f"submission/{issue}-{res['id']}"
-    sh("git", "config", "user.name", "github-actions[bot]", cwd=root, dry=dry)
-    sh("git", "config", "user.email", "41898282+github-actions[bot]@users.noreply.github.com", cwd=root, dry=dry)
-    sh("git", "checkout", "-B", branch, cwd=root, dry=dry)
-    sh("git", "add", res["folder"], cwd=root, dry=dry)
-    sh("git", "commit", "-m", f"Add {res['name']} by {res['author']} (#{issue})", cwd=root, dry=dry)
-    sh("git", "push", "--force", "origin", branch, cwd=root, dry=dry)
-    text = pr_body(issue, author, res, source_field, repo, branch)
+    maintainer = False if dry else ghutil.is_maintainer(repo, author)
+    decision = gate.decide(root, changes, author, maintainer)
+    print(decision["action"], decision["problems"], decision["reasons"])
+
+    if decision["action"] == "fix":
+        say("The package didn't pass the checks:\n\n" + "\n".join(f"- {p}" for p in decision["problems"]) +
+            "\n\nFix that (the plugin's **Package for the library** makes a package that passes), attach the new `.zip` by editing the "
+            "issue, and I check it again when you save. (To update an item you already published, raise its **Version**.)", needs_changes=True)
+        return 0
+
+    folder = next(iter(changes)).rsplit("/", 1)[0]
+    item = decision["items"][0] if decision["items"] else {"id": folder.split("/")[1], "kind": "dash" if folder.startswith("dashes") else "saver",
+                                                          "new": True, "removed": False}
+    title = (ghutil.summary(decision) or f"Add {item['id']}") + f" (#{issue})"
+    if decision["action"] == "review":
+        branch = f"submission/{issue}-{item['id']}"
+        if dry:
+            print("--- would leave it on branch", branch, "because:", decision["reasons"])
+            return 0
+        ghutil.git_identity(root)
+        ghutil.sh("git", "checkout", "-B", branch, cwd=root)
+        gate.write_changes(root, changes)
+        ghutil.sh("git", "add", "-A", cwd=root)
+        ghutil.sh("git", "commit", "-m", title, cwd=root)
+        ghutil.sh("git", "push", "--force", "origin", branch, cwd=root)
+        say("The package passed the checks, but a person needs to look at it first:\n\n" + "\n".join(f"- {r}" for r in decision["reasons"]) +
+            f"\n\n**Maintainer:** [open the pull request](https://github.com/{repo}/compare/main...{branch}?expand=1) to publish it.", labels=["review"])
+        return 0
+
     if dry:
-        print("--- pull request body:\n" + text)
+        gate.write_changes(root, changes)
+        gate.record(root, decision, author)
+        print(f"--- would publish: {title}; owners.json and index.json updated; issue closed")
         return 0
-    body_file = os.path.join(work, "pr.md")
-    open(body_file, "w", encoding="utf-8").write(text)
-    sh("gh", "issue", "edit", str(issue), "--remove-label", "needs-changes", check=False)
-    existing = json.loads(sh("gh", "pr", "list", "--head", branch, "--state", "open", "--json", "number") or "[]")
-    if existing:
-        comment(issue, f"Updated the pull request #{existing[0]['number']} with the new package.", dry)
-        return 0
-    sh("gh", "label", "create", "submission", "--color", "e11d2e", check=False)
-    try:
-        pr = sh("gh", "pr", "create", "--base", "main", "--head", branch, "--title", f"Add {res['name']} ({res['kind']})",
-                "--body-file", body_file, "--label", "submission")
-    except subprocess.CalledProcessError as ex:
-        # Actions may not be allowed to open pull requests (an organization setting): the checked item is on its branch,
-        # so a maintainer opens the pull request with one click instead.
-        print("gh pr create failed:", (ex.stderr or "").strip(), file=sys.stderr)
-        sh("gh", "label", "create", "ready", "--color", "0e8a16", check=False)
-        sh("gh", "issue", "edit", str(issue), "--add-label", "ready", check=False)
-        comment(issue, "The package passed every check and is on the branch `" + branch + "`.\n\n"
-                       f"**Maintainer:** [open the pull request](https://github.com/{repo}/compare/main...{branch}?expand=1) "
-                       "(the preview is in the files), check the preview and the licence, and merge. The submitter is credited as the author.\n\n"
-                       + text, dry)
-        return 0
-    comment(issue, f"The package passed every check and is now a pull request: {pr}\n\n"
-                   "A maintainer will look at the preview and the licence, and merge it. You will be credited as its author.", dry)
+    if not ghutil.finish(root, decision, author, title, apply_changes=changes):
+        say("The package passed every check, but main was busy and I couldn't publish it. A maintainer can add the label `ingest` to try again.", labels=["review"])
+        return 1
+    verb = "Published" if item["new"] else "Updated"
+    say(f"{verb}! {title.split(' (#')[0]} is in the library: it shows up on https://fxunleashed.com/library/#{item['kind']}-{item['id']} "
+        "and in the plugin's library within a few minutes." + (f" It's credited to @{author}; to update it later, submit again with a higher **Version**."
+                                                              if item["new"] else ""))
+    ghutil.sh("gh", "issue", "close", str(issue), "--reason", "completed", check=False)
     return 0
 
 

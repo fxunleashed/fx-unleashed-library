@@ -1,7 +1,8 @@
 name: Rebuild index
 
 # index.json is what the plugin and the website read. It is generated from the item folders, so it is rebuilt here after
-# every merge that changes an item (submission pull requests don't touch it, so two of them never conflict).
+# every merge that changes an item by hand. The automatic paths (tools/pr_gate.py, tools/submission_bot.py) rebuild it themselves,
+# because a push made with the workflow token doesn't start other workflows.
 
 on:
   push:

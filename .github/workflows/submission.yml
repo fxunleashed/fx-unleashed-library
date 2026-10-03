@@ -1,6 +1,7 @@
 name: Submission
 
-# "Submit a dash or screensaver" issue -> checked -> pull request. A maintainer reviews and merges; nobody needs Git.
+# "Submit a dash or screensaver" issue -> checked with the same rules that merge pull requests (tools/gate.py) -> published.
+# Nobody needs Git, and nobody has to approve a package that passes.
 # The issue text and the attached package are untrusted: tools/submission_bot.py only parses the text (it is passed in the
 # environment, never into a shell) and only fetches a GitHub attachment. Adding the label `ingest` runs it again; so does editing an issue the checks refused.
 
@@ -10,7 +11,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
   issues: write
 
 concurrency:

@@ -2,9 +2,8 @@
 
 **No Git? Use the form:** package it in the plugin (step 2 below: it writes `<id>.fxdash.zip`) and drag that file into a
 [Submit a dash](https://github.com/fxunleashed/fx-unleashed-library/issues/new?template=submit-dash.yml) issue.
-A bot checks the package and opens the pull request for you (or comments with what to fix: edit the issue with the
-new package and it checks again). A maintainer then looks at the preview and the licence and merges. The steps below are
-for doing it yourself with a pull request.
+A bot checks the package and, if it passes, **publishes it on the spot** (or comments with what to fix: edit the issue
+with the new package and it checks again). The steps below are for doing it yourself with a pull request.
 
 1. **Make it** in the plugin's dash designer (Dashes tab > Edit in the designer) or as a JSON file. Get it to pass
    the designer's checks with no warnings: no flashing, text that fits, low USB traffic. The `create-dash` guide in
@@ -18,13 +17,31 @@ for doing it yourself with a pull request.
    ```
 3. **Add the folder** to `dashes/` (or `savers/`) in your fork and open a pull request. Only your item's folder (and
    `index.json`, if you rebuilt it with `python tools/build_index.py`) may change; `index.json` is rebuilt after the merge anyway.
-4. The workflow checks it (files, sizes, checksum, format, no scripts, preview size). A maintainer looks at the
-   preview and the licence, then merges. It's in the plugin and on the website right after.
+4. A check runs on your pull request (files, sizes, checksum, format, no scripts, preview size). If every rule below
+   holds, **it merges by itself**; if something's wrong the check comments with what to fix, and pushing the fix runs it
+   again. It's in the plugin and on the website a few minutes after the merge.
 
 ## Updating your item
 
-Change it, package it again with a higher `--version` (or edit Version in the dialog's meta.json), replace the three
-files, rebuild the index. Players who installed it see "Update to vX".
+Package it again with a **higher Version** (the plugin's dialog has a Version field; `fxdash package --version`) and send
+it the same way: the form, or a pull request that replaces the item's three files. You own what you published, so it goes
+in on its own; nobody else can change it (a maintainer can). Players who installed it see "Update to vX".
+To take an item down, delete its folder in a pull request.
+
+## What goes in without a person looking
+
+A pull request, or a form submission, is published automatically when all of this holds (`tools/gate.py`, with tests):
+
+- it only adds, changes or removes item folders (`dashes/<id>/` or `savers/<id>/` with `dash.json`, `meta.json`,
+  `preview.png`), never workflows, tools or `index.json` (that file decides what the plugin downloads, so only the repo's
+  own automation writes it);
+- at most 3 items at once and 3 new items per person per day;
+- every item passes the checks: format, sizes, checksum, no scripts, 800x480 preview, `Permission` for converted work;
+- a new item becomes yours (`owners.json`); only you or a maintainer can update or remove it, and an update raises `Version`;
+- the library's own seed items have no owner: only maintainers change them.
+
+Anything else waits for a maintainer, with a comment saying why. The automatic path never runs anything from your
+submission: it only reads the files.
 
 ## Rights
 

@@ -1,0 +1,2 @@
+# GitHub accounts whose dashes are never published automatically (a maintainer looks at each one). One login per line.
+# To take an item down: delete its folder (dashes/<id> or savers/<id>) and commit; index.json is rebuilt automatically.

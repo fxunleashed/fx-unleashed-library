@@ -9,9 +9,10 @@ body:
         **In the plugin:** Dashes tab, pick your dash, **Package for the library**. It writes `<id>.fxdash.zip`:
         drag that file into the box below and submit.
 
-        A bot checks the package (format, size, no scripts, preview) and, if it passes, opens a pull request; if not it
-        tells you what to fix, and you fix it by editing this issue. A maintainer then looks at the preview and the licence
-        and merges it. It shows up on fxunleashed.com and in the plugin right after, and you're credited as its author.
+        A bot checks the package (format, size, no scripts, preview, checksum). If it passes, it is published straight away
+        and this issue closes with the link; if not, the bot says what to fix and checks again when you edit this issue.
+        You are credited as the author, and you can update your dash later the same way: submit again with a higher
+        **Version** (only you can change it).
   - type: input
     id: name
     attributes:

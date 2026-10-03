@@ -1,0 +1,36 @@
+name: Dash pull requests
+
+# A pull request that adds or updates dashes is checked and, when every rule in tools/gate.py holds, merged on its own.
+# Anything else (other files, someone else's item, too many items...) is left for a maintainer, with a comment saying why.
+#
+# This runs on pull_request_target so it can merge pull requests from forks. That is safe because nothing from the pull
+# request is checked out or executed: tools/pr_gate.py is the code on main, and it only reads the pull request's files as data
+# through the API.
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  gate:
+    if: github.event.pull_request.base.ref == 'main' && !github.event.pull_request.draft
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check, and merge if every rule holds
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+        run: python tools/pr_gate.py

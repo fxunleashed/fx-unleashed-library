@@ -158,7 +158,7 @@ def main(argv):
         ghutil.git_identity(root)
         ghutil.sh("git", "checkout", "-B", branch, cwd=root)
         gate.write_changes(root, changes)
-        ghutil.sh("git", "add", "-A", cwd=root)
+        ghutil.sh("git", "add", "-A", "--", "dashes", "savers", cwd=root)
         ghutil.sh("git", "commit", "-m", title, cwd=root)
         ghutil.sh("git", "push", "--force", "origin", branch, cwd=root)
         say("The package passed the checks, but a person needs to look at it first:\n\n" + "\n".join(f"- {r}" for r in decision["reasons"]) +

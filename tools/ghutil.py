@@ -74,8 +74,8 @@ def finish(root, decision, actor, message, apply_changes=None, tries=4):
             gate.write_changes(root, apply_changes)
         gate.record(root, decision, actor)
         subprocess.run([sys.executable, os.path.join(root, "tools", "build_index.py")], cwd=root, check=True)
-        sh("git", "add", "-A", cwd=root)
-        if not sh("git", "status", "--porcelain", cwd=root):
+        sh("git", "add", "-A", "--", "owners.json", "index.json", "dashes", "savers", cwd=root)  # only what we wrote: not caches
+        if not sh("git", "status", "--porcelain", "--untracked-files=no", cwd=root):
             return True
         sh("git", "commit", "-m", message, cwd=root)
         if subprocess.run(["git", "push", "origin", "main"], cwd=root, capture_output=True).returncode == 0:

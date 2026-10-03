@@ -1,0 +1,41 @@
+name: Submission
+
+# "Submit a dash or screensaver" issue -> checked -> pull request. A maintainer reviews and merges; nobody needs Git.
+# The issue text and the attached package are untrusted: tools/submission_bot.py only parses the text (it is passed in the
+# environment, never into a shell) and only fetches a GitHub attachment. Adding the label `ingest` runs it again; so does editing an issue the checks refused.
+
+on:
+  issues:
+    types: [opened, edited, labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: submission-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    # opened; labeled `ingest` by a maintainer; or edited by the submitter after the checks refused the package (`needs-changes`)
+    if: >-
+      contains(github.event.issue.labels.*.name, 'submission') &&
+      (github.event.action == 'opened' ||
+       (github.event.action == 'labeled' && github.event.label.name == 'ingest') ||
+       (github.event.action == 'edited' && github.event.issue.state == 'open' && contains(github.event.issue.labels.*.name, 'needs-changes')))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check the package and open the pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: python tools/submission_bot.py

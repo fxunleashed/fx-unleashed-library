@@ -1,0 +1,37 @@
+name: Rebuild index
+
+# index.json is what the plugin and the website read. It is generated from the item folders, so it is rebuilt here after
+# every merge that changes an item (submission pull requests don't touch it, so two of them never conflict).
+
+on:
+  push:
+    branches: [main]
+    paths: ["dashes/**", "savers/**"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reindex
+  cancel-in-progress: false
+
+jobs:
+  reindex:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python tools/build_index.py
+      - name: Commit index.json if it changed
+        run: |
+          if git diff --quiet -- index.json; then echo "index.json is current"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.json
+          git commit -m "Rebuild index.json"
+          git pull --rebase origin main
+          git push
+      - run: python tools/build_index.py --check

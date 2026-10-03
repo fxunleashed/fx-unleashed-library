@@ -45,9 +45,13 @@ checks refuse changes to `cars/` in a submission). `tools/check_cars.py` checks 
 
 ## Submit one
 
-Package it in the plugin (Dashes tab, **Package for the library**), then either attach the zipped folder to a
-[Submit a dash](https://github.com/fxunleashed/fx-unleashed-library/issues/new?template=submit-dash.yml) issue (no Git needed) or open a pull request: see
+Package it in the plugin (Dashes tab, **Package for the library**: it writes `<id>.fxdash.zip`), then drag that file into a
+[Submit a dash](https://github.com/fxunleashed/fx-unleashed-library/issues/new?template=submit-dash.yml) issue (no Git needed).
+A bot checks it and opens the pull request; a maintainer reviews and merges. Or open the pull request yourself: see
 [CONTRIBUTING.md](CONTRIBUTING.md).
+
+**Just want to give a dash to a friend?** The plugin's **Share…** button writes it as one file (`<id>.fxdash.json`); they drop it
+on the plugin's Dashes tab. For anything in this library, **Copy link** gives a page with a preview and an Install button.
 
 ## Licences
 

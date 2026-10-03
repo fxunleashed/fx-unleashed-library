@@ -6,12 +6,12 @@ body:
   - type: markdown
     attributes:
       value: |
-        **In the plugin:** Dashes tab, pick your dash, **Package for the library**. It writes a folder
-        (`dashes/<id>` or `savers/<id>`) with `dash.json`, `meta.json` and `preview.png`. Zip that folder and drag the
-        `.zip` into the box below.
+        **In the plugin:** Dashes tab, pick your dash, **Package for the library**. It writes `<id>.fxdash.zip`:
+        drag that file into the box below and submit.
 
-        A maintainer looks at the preview and the licence, then adds it. It shows up on fxunleashed.com and in the
-        plugin right after, and you're credited as its author.
+        A bot checks the package (format, size, no scripts, preview) and, if it passes, opens a pull request; if not it
+        tells you what to fix, and you fix it by editing this issue. A maintainer then looks at the preview and the licence
+        and merges it. It shows up on fxunleashed.com and in the plugin right after, and you're credited as its author.
   - type: input
     id: name
     attributes:
@@ -23,7 +23,7 @@ body:
     id: package
     attributes:
       label: Package (.zip)
-      description: Drag the zipped folder here. Nothing else.
+      description: Drag the .fxdash.zip the plugin wrote here (or a zip of the item's folder). Nothing else.
     validations:
       required: true
   - type: input

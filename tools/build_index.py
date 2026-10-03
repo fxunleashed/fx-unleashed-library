@@ -2,7 +2,8 @@
 """Validates every library item and writes index.json (the file the plugin and the website read).
 
     python tools/build_index.py            validate, then write index.json
-    python tools/build_index.py --check    validate, and fail if index.json is out of date (CI on pull requests)
+    python tools/build_index.py --check    validate, and fail if index.json is out of date
+    python tools/build_index.py --validate validate only: no index.json written or compared (pull requests: the index is rebuilt after the merge)
 
 Standard library only (CI installs nothing). The rules are the plugin's (LibraryClient.Check in the FX Unleashed
 plugin), so an item that passes here installs there:
@@ -29,6 +30,16 @@ MAX_DASH, MAX_PREVIEW, MAX_IMAGES = 1024 * 1024, 512 * 1024, 700 * 1024
 ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]{1,63}$")
 SEMVER_RE = re.compile(r"^\d+\.\d+\.\d+(-[0-9A-Za-z.-]+)?$")
 KINDS = {"dashes": "dash", "savers": "saver"}
+
+
+def read_bytes(path):
+    with open(path, "rb") as f:
+        return f.read()
+
+
+def read_json(path):
+    with open(path, encoding="utf-8-sig") as f:
+        return json.load(f)
 
 
 def png_size(data):
@@ -67,7 +78,7 @@ def check_item(folder, kind, item_id):
     if p:
         return None, p
 
-    raw = open(files["dash.json"], "rb").read()
+    raw = read_bytes(files["dash.json"])
     if len(raw) > MAX_DASH:
         p.append(f"dash.json is {len(raw) // 1024} KB (max {MAX_DASH // 1024} KB)")
     try:
@@ -75,7 +86,7 @@ def check_item(folder, kind, item_id):
     except Exception as ex:
         return None, [f"dash.json isn't JSON: {ex}"]
     try:
-        meta = json.load(open(files["meta.json"], encoding="utf-8-sig"))
+        meta = read_json(files["meta.json"])
     except Exception as ex:
         return None, [f"meta.json isn't JSON: {ex}"]
 
@@ -109,7 +120,7 @@ def check_item(folder, kind, item_id):
     if meta.get("Source") and not meta.get("Permission"):
         p.append("converted work (Source) needs Permission: where its author agreed (TERMS.md)")
 
-    prev = open(files["preview.png"], "rb").read()
+    prev = read_bytes(files["preview.png"])
     size = png_size(prev)
     if size is None:
         p.append("preview.png isn't a PNG")
@@ -147,17 +158,21 @@ def build():
 
 def main():
     check = "--check" in sys.argv
+    validate_only = "--validate" in sys.argv
     items, problems = build()
     for where, p in problems.items():
         for x in p:
             print(f"FAIL {where}: {x}")
     if problems:
         sys.exit(1)
+    if validate_only:
+        print(f"ok: {len(items)} items valid")
+        return
     out = os.path.join(ROOT, "index.json")
     old = None
     if os.path.isfile(out):
         try:
-            old = json.load(open(out, encoding="utf-8"))
+            old = read_json(out)
         except Exception:
             old = None
     same = old is not None and old.get("Schema") == SCHEMA and old.get("Items") == items

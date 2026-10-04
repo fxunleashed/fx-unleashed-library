@@ -134,7 +134,7 @@ class Gate(unittest.TestCase):
     def test_scripts(self):
         changes = item("bobs-dash")
         dash = json.loads(changes["dashes/bobs-dash/dash.json"])
-        dash["Elements"][0]["Bind"] = "js:return 1"
+        dash["Elements"][0]["Bind"] = "js:return eval(1)"
         raw = json.dumps(dash).encode()
         changes["dashes/bobs-dash/dash.json"] = raw
         meta = json.loads(changes["dashes/bobs-dash/meta.json"])

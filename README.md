@@ -35,8 +35,10 @@ checks refuse changes to `cars/` in a submission). `tools/check_cars.py` checks 
 
 ## Rules (checked for every submission)
 
-- **No code.** Dashes with JavaScript (`js:` bindings or a scripts folder) are refused: downloaded code would run
-  inside SimHub. SimHub's NCalc formulas (`ncalc:`) and properties (`prop:`) are fine.
+- **Checked scripts only.** SimHub's NCalc formulas (`ncalc:`) and properties (`prop:`) are always fine. A `js:` formula is
+  code SimHub runs, so it must pass an automatic check that allows only a short list of safe parts (no loops, no `eval`, no
+  functions of its own, no way out of the dash): see [SCRIPTS.md](SCRIPTS.md). A scripts folder is refused. A dash with a
+  script is marked "Contains a checked script".
 - **Size:** dash.json up to 1 MB, pictures inside it up to 700 KB, preview up to 512 KB.
 - **Format:** a dash format the current plugin reads; the plugin refuses newer ones rather than half-loading them.
 - **Checksums:** meta.json carries the sha256 of dash.json; the plugin checks every download against it.

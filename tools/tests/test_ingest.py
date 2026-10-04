@@ -135,7 +135,7 @@ class Ingest(unittest.TestCase):
     def test_scripts_refused(self):
         f = source_files()
         dash = json.loads(f["dash.json"])
-        dash["Elements"][0]["Bind"] = "js:return 1"
+        dash["Elements"][0]["Bind"] = "js:return eval(1)"
         raw = json.dumps(dash).encode()
         f["dash.json"] = raw
         meta = json.loads(f["meta.json"])

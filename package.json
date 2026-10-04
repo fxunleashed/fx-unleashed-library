@@ -1,0 +1,10 @@
+{
+  "name": "fx-unleashed-library-tools",
+  "private": true,
+  "description": "Used only by the library's checks: tools/script_rules.mjs reads a dash's js: formulas with acorn and allows only the short list in SCRIPTS.md.",
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "dependencies": {
+    "acorn": "8.18.0"
+  }
+}

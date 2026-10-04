@@ -20,7 +20,7 @@ with the new package and it checks again). The steps below are for doing it your
    ```
 3. **Add the folder** to `dashes/` (or `savers/`) in your fork and open a pull request. Only your item's folder (and
    `index.json`, if you rebuilt it with `python tools/build_index.py`) may change; `index.json` is rebuilt after the merge anyway.
-4. A check runs on your pull request (files, sizes, checksum, format, no scripts, preview size). If every rule below
+4. A check runs on your pull request (files, sizes, checksum, format, scripts, preview size). If every rule below
    holds, **it merges by itself**; if something's wrong the check comments with what to fix, and pushing the fix runs it
    again. It's in the plugin and on the website a few minutes after the merge.
 
@@ -39,7 +39,7 @@ A pull request, or a form submission, is published automatically when all of thi
   `preview.png`), never workflows, tools or `index.json` (that file decides what the plugin downloads, so only the repo's
   own automation writes it);
 - at most 3 items at once and 3 new items per person per day;
-- every item passes the checks: format, sizes, checksum, no scripts, 800x480 preview, `Permission` for converted work;
+- every item passes the checks: format, sizes, checksum, checked scripts, 800x480 preview, `Permission` for converted work;
 - a new item becomes yours (`owners.json`); only you or a maintainer can update or remove it, and an update raises `Version`;
 - the library's own seed items have no owner: only maintainers change them.
 

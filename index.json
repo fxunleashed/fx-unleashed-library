@@ -1,7 +1,66 @@
 {
  "Schema": 1,
- "Generated": "2026-10-03T22:55:13Z",
+ "Generated": "2026-10-03T23:58:34Z",
  "Items": [
+  {
+   "Id": "toyota-gr010-hybrid",
+   "Kind": "dash",
+   "Name": "Toyota GR010 Hybrid",
+   "Author": "Redadeg (lmu-dashboards.com)",
+   "Description": "Converted for the FX Pro by FX Unleashed from Redadeg's SimHub dash \"Toyota GR010 Hybrid\" (https://lmu-dashboards.com).",
+   "Version": "1.0.0",
+   "Games": [
+    "Le Mans Ultimate"
+   ],
+   "Cars": [],
+   "Tags": [
+    "lmu",
+    "hypercar",
+    "hybrid",
+    "endurance"
+   ],
+   "License": "Converted work: see Source",
+   "Source": "Redadeg's SimHub dash \"Toyota GR010 Hybrid\", https://lmu-dashboards.com",
+   "Created": "2026-10-03",
+   "Updated": "2026-10-03",
+   "FormatVersion": 2,
+   "MinPlugin": "0.5.2",
+   "BytesStatic": 37273,
+   "BytesPerSecond": 3530,
+   "Sha256": "4beceb7e91607fca10e89768f9295fc873ce09bb13f04e434d069a962d5c8088",
+   "HasScript": true,
+   "DashUrl": "dashes/toyota-gr010-hybrid/dash.json",
+   "PreviewUrl": "dashes/toyota-gr010-hybrid/preview.png"
+  },
+  {
+   "Id": "lmgt3-mclaren-720s",
+   "Kind": "dash",
+   "Name": "LMGT3 McLaren 720S GT3",
+   "Author": "Redadeg (lmu-dashboards.com)",
+   "Description": "Converted for the FX Pro by FX Unleashed from Redadeg's SimHub dash \"LMGT3 McLaren 720S GT3 Evo\" (https://lmu-dashboards.com).",
+   "Version": "1.0.0",
+   "Games": [
+    "Le Mans Ultimate"
+   ],
+   "Cars": [],
+   "Tags": [
+    "lmu",
+    "gt3",
+    "endurance"
+   ],
+   "License": "Converted work: see Source",
+   "Source": "Redadeg's SimHub dash \"LMGT3 McLaren 720S GT3 Evo\", https://lmu-dashboards.com",
+   "Created": "2026-10-03",
+   "Updated": "2026-10-03",
+   "FormatVersion": 2,
+   "MinPlugin": "0.5.2",
+   "BytesStatic": 21036,
+   "BytesPerSecond": 3099,
+   "Sha256": "82f431c909c98a7cf9b0d256fdb2a41ddddb33c22d1a1f52404db685b8e7d91f",
+   "HasScript": true,
+   "DashUrl": "dashes/lmgt3-mclaren-720s/dash.json",
+   "PreviewUrl": "dashes/lmgt3-mclaren-720s/preview.png"
+  },
   {
    "Id": "slipstream",
    "Kind": "dash",

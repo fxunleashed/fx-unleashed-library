@@ -16,7 +16,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      # every item: files, sizes, ids, sha256, dash format, no scripts, previews 800x480
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      # the script check (tools/script_rules.mjs) needs acorn, pinned in package-lock.json; no install scripts run
+      - run: npm ci --ignore-scripts
+      # every item: files, sizes, ids, sha256, dash format, checked scripts, previews 800x480
       # (index.json is rebuilt after a merge by reindex.yml, so a submission doesn't have to touch it)
       - name: Check items
         run: python tools/build_index.py --validate

@@ -27,6 +27,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      # the script check (tools/script_rules.mjs) needs acorn, pinned in package-lock.json; no install scripts run
+      - run: npm ci --ignore-scripts
       - name: Check, and merge if every rule holds
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

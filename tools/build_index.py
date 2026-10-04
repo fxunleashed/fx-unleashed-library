@@ -5,14 +5,17 @@
     python tools/build_index.py --check    validate, and fail if index.json is out of date
     python tools/build_index.py --validate validate only: no index.json written or compared (pull requests: the index is rebuilt after the merge)
 
-Standard library only (CI installs nothing). The rules are the plugin's (LibraryClient.Check in the FX Unleashed
+Python's standard library plus Node.js with acorn for the script check (CI: setup-node and `npm ci`). The rules are the plugin's (LibraryClient.Check in the FX Unleashed
 plugin), so an item that passes here installs there:
   - dashes/<id>/ or savers/<id>/ with dash.json (<= 1 MB), meta.json, preview.png (PNG, 800x480, <= 512 KB);
   - ids: lower case letters, digits and dashes, 2-64 characters, the folder's name;
   - meta: Name, Author, License, Version (SemVer), Sha256 = sha256 of dash.json, FormatVersion <= FORMAT;
-  - dash.json: a dash (Elements), FormatVersion <= FORMAT, no ScriptsFolder, no js: bindings (JavaScript would run
-    inside SimHub), pictures (Images) <= 700 KB in total;
-  - converted work (Source set) needs Permission: where the original author said yes (see TERMS.md).
+  - dash.json: a dash (Elements), FormatVersion <= FORMAT, no ScriptsFolder, pictures (Images) <= 700 KB in total;
+  - js: bindings are JavaScript that SimHub runs, so each must be a checked script: only the short list in SCRIPTS.md
+    (tools/script_rules.mjs, the same rules as the plugin's ScriptCheck); anything else is refused. The index marks such a
+    dash HasScript so the plugin and the website can say so;
+  - converted work (Source set) needs Permission: where the original author said yes (see TERMS.md), unless the maintainers
+    added it themselves (maintained.json, which a pull request can't change).
 The plugin measures BytesStatic / BytesPerSecond when it packages an item; they're reported, not trusted for safety.
 """
 import hashlib
@@ -22,6 +25,9 @@ import re
 import struct
 import sys
 from datetime import datetime, timezone
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import jscheck  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FORMAT = 2            # newest dash format the current plugin reads (DashDefinition.CurrentFormat)
@@ -40,6 +46,14 @@ def read_bytes(path):
 def read_json(path):
     with open(path, encoding="utf-8-sig") as f:
         return json.load(f)
+
+
+def maintained():
+    """Items the maintainers added themselves (converted work they answer for): no Permission link needed. Only a maintainer can edit maintained.json."""
+    try:
+        return set(read_json(os.path.join(ROOT, "maintained.json")).get("Converted", []))
+    except Exception:
+        return set()
 
 
 def png_size(data):
@@ -96,9 +110,8 @@ def check_item(folder, kind, item_id):
         p.append(f"dash format {dash.get('FormatVersion')} is newer than the plugin reads ({FORMAT})")
     if dash.get("ScriptsFolder"):
         p.append("ScriptsFolder (JavaScript) isn't allowed")
-    js = [b for b in bindings(dash) if b.strip().lower().startswith("js:")]
-    if js:
-        p.append(f"js: bindings aren't allowed ({len(js)})")
+    scripts = [b.strip()[3:] for b in bindings(dash) if b.strip().lower().startswith("js:")]
+    p.extend(jscheck.problems_for(scripts))
     images = sum(len(v) for v in (dash.get("Images") or {}).values() if isinstance(v, str))
     if images > MAX_IMAGES:
         p.append(f"pictures are {images // 1024} KB (max {MAX_IMAGES // 1024} KB)")
@@ -117,7 +130,7 @@ def check_item(folder, kind, item_id):
     sha = hashlib.sha256(raw).hexdigest()
     if (meta.get("Sha256") or "").lower() != sha:
         p.append("meta Sha256 doesn't match dash.json (package it again with the plugin or fxdash)")
-    if meta.get("Source") and not meta.get("Permission"):
+    if meta.get("Source") and not meta.get("Permission") and f"{folder}/{item_id}" not in maintained():
         p.append("converted work (Source) needs Permission: where its author agreed (TERMS.md)")
 
     prev = read_bytes(files["preview.png"])
@@ -128,7 +141,25 @@ def check_item(folder, kind, item_id):
         p.append(f"preview.png is {size[0]}x{size[1]} (render it with the plugin or fxdash: 800x480)")
     if len(prev) > MAX_PREVIEW:
         p.append(f"preview.png is {len(prev) // 1024} KB (max {MAX_PREVIEW // 1024} KB)")
+    meta = dict(meta)
+    if scripts:
+        meta["HasScript"] = True
+        # plugins before 0.5.2 refuse every js: formula: they are told to update instead of failing at install
+        if not at_least(meta.get("MinPlugin"), SCRIPTS_MIN_PLUGIN):
+            meta["MinPlugin"] = SCRIPTS_MIN_PLUGIN
     return meta, p
+
+
+SCRIPTS_MIN_PLUGIN = "0.5.2"
+
+
+def at_least(version, minimum):
+    """version >= minimum for x.y.z[-pre]; an empty or odd version counts as lower."""
+    def key(v):
+        m = re.match(r"^(\d+)\.(\d+)\.(\d+)(?:-([0-9A-Za-z.-]+))?$", v or "")
+        return None if not m else (int(m[1]), int(m[2]), int(m[3]), 1 if m[4] is None else 0)
+    a, b = key(version), key(minimum)
+    return a is not None and b is not None and a >= b
 
 
 def build():

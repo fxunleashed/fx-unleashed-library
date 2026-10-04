@@ -1,7 +1,35 @@
 {
  "Schema": 1,
- "Generated": "2026-10-04T00:07:34Z",
+ "Generated": "2026-10-04T01:39:54Z",
  "Items": [
+  {
+   "Id": "lmgt3-mustang",
+   "Kind": "dash",
+   "Name": "LMGT3 Ford Mustang GT3",
+   "Author": "Redadeg (lmu-dashboards.com)",
+   "Description": "Converted for the FX Pro by FX Unleashed from Redadeg's SimHub dash \"LMGT3 Ford Mustang GT3\" (https://lmu-dashboards.com).",
+   "Version": "1.0.0",
+   "Games": [
+    "Le Mans Ultimate"
+   ],
+   "Cars": [],
+   "Tags": [
+    "lmu",
+    "gt3",
+    "endurance"
+   ],
+   "License": "Converted work, rights with the original author",
+   "Source": "Redadeg's SimHub dash \"LMGT3 Ford Mustang GT3\", https://lmu-dashboards.com",
+   "Created": "2026-10-04",
+   "Updated": "2026-10-04",
+   "FormatVersion": 2,
+   "MinPlugin": "0.5.3",
+   "BytesStatic": 15171,
+   "BytesPerSecond": 1162,
+   "Sha256": "b4fefc81610f851a755e2d3d9c83cd7ee858a5168ba5afca1965e8d1f0e574d2",
+   "DashUrl": "dashes/lmgt3-mustang/dash.json",
+   "PreviewUrl": "dashes/lmgt3-mustang/preview.png"
+  },
   {
    "Id": "toyota-gr010-hybrid",
    "Kind": "dash",

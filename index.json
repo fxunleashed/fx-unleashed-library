@@ -1,6 +1,6 @@
 {
  "Schema": 1,
- "Generated": "2026-10-03T23:58:34Z",
+ "Generated": "2026-10-04T00:07:34Z",
  "Items": [
   {
    "Id": "toyota-gr010-hybrid",
@@ -19,7 +19,7 @@
     "hybrid",
     "endurance"
    ],
-   "License": "Converted work: see Source",
+   "License": "Converted work, rights with the original author",
    "Source": "Redadeg's SimHub dash \"Toyota GR010 Hybrid\", https://lmu-dashboards.com",
    "Created": "2026-10-03",
    "Updated": "2026-10-03",
@@ -48,7 +48,7 @@
     "gt3",
     "endurance"
    ],
-   "License": "Converted work: see Source",
+   "License": "Converted work, rights with the original author",
    "Source": "Redadeg's SimHub dash \"LMGT3 McLaren 720S GT3 Evo\", https://lmu-dashboards.com",
    "Created": "2026-10-03",
    "Updated": "2026-10-03",

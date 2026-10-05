@@ -1,7 +1,61 @@
 {
  "Schema": 1,
- "Generated": "2026-10-05T06:38:23Z",
+ "Generated": "2026-10-05T17:18:59Z",
  "Items": [
+  {
+   "Id": "slipstream",
+   "Kind": "dash",
+   "Name": "SLIPSTREAM",
+   "Author": "FX Unleashed",
+   "Description": "Original hot-lapping dash in a livery look: a huge gear, a hero delta with tape, predicted, last and best lap, sector splits and tyre temperatures as colour blocks, and a settings strip.",
+   "Version": "1.0.1",
+   "Games": [],
+   "Cars": [],
+   "Tags": [
+    "hot-lap",
+    "sectors",
+    "tyres",
+    "livery"
+   ],
+   "License": "CC-BY-4.0",
+   "Created": "2026-10-02",
+   "Updated": "2026-10-05",
+   "FormatVersion": 2,
+   "MinPlugin": "0.3.0-beta.1",
+   "BytesStatic": 35448,
+   "BytesPerSecond": 970,
+   "Sha256": "afd97fe225940cfbb501a9f3f2bda31885677da72197162ea45b9c8732b645bd",
+   "DashUrl": "dashes/slipstream/dash.json",
+   "PreviewUrl": "dashes/slipstream/preview.png"
+  },
+  {
+   "Id": "lmp3-ginetta-g61",
+   "Kind": "dash",
+   "Name": "LMP3 Ginetta G61",
+   "Author": "Redadeg (lmu-dashboards.com)",
+   "Description": "Converted for the FX Pro by FX Unleashed from Redadeg's SimHub dash \"LMP3 Ginetta G61\" (https://lmu-dashboards.com). Three pages in the tyre panel: tyre pressures, brake temperatures and tyre temperatures (bind Next / Previous page to a wheel button).",
+   "Version": "1.0.0",
+   "Games": [
+    "Le Mans Ultimate"
+   ],
+   "Cars": [],
+   "Tags": [
+    "lmu",
+    "lmp3",
+    "endurance"
+   ],
+   "License": "Converted work, rights with the original author",
+   "Source": "Redadeg's SimHub dash \"LMP3 Ginetta G61\", https://lmu-dashboards.com",
+   "Created": "2026-10-05",
+   "Updated": "2026-10-05",
+   "FormatVersion": 3,
+   "MinPlugin": "0.6.1",
+   "BytesStatic": 30346,
+   "BytesPerSecond": 2164,
+   "Sha256": "0d5a43a6415db0c1e5c26371ddb83b8e1181c1be3d14119e15212b9df15b6726",
+   "DashUrl": "dashes/lmp3-ginetta-g61/dash.json",
+   "PreviewUrl": "dashes/lmp3-ginetta-g61/preview.png"
+  },
   {
    "Id": "lmgt3-mustang",
    "Kind": "dash",
@@ -89,32 +143,6 @@
    "HasScript": true,
    "DashUrl": "dashes/lmgt3-mclaren-720s/dash.json",
    "PreviewUrl": "dashes/lmgt3-mclaren-720s/preview.png"
-  },
-  {
-   "Id": "slipstream",
-   "Kind": "dash",
-   "Name": "SLIPSTREAM",
-   "Author": "FX Unleashed",
-   "Description": "Original hot-lapping dash in a livery look: a huge gear, a hero delta with tape, predicted, last and best lap, sector splits and tyre temperatures as colour blocks, and a settings strip.",
-   "Version": "1.0.0",
-   "Games": [],
-   "Cars": [],
-   "Tags": [
-    "hot-lap",
-    "sectors",
-    "tyres",
-    "livery"
-   ],
-   "License": "CC-BY-4.0",
-   "Created": "2026-10-02",
-   "Updated": "2026-10-02",
-   "FormatVersion": 2,
-   "MinPlugin": "0.3.0-beta.1",
-   "BytesStatic": 35448,
-   "BytesPerSecond": 970,
-   "Sha256": "d97500201fcabf630d0fd17ed02d613e2fb759f48e7306feee172d1289bce967",
-   "DashUrl": "dashes/slipstream/dash.json",
-   "PreviewUrl": "dashes/slipstream/preview.png"
   },
   {
    "Id": "nocturne-red",

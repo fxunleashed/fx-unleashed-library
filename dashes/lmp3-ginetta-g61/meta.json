@@ -1,0 +1,26 @@
+{
+  "Id": "lmp3-ginetta-g61",
+  "Kind": "dash",
+  "Name": "LMP3 Ginetta G61",
+  "Author": "Redadeg (lmu-dashboards.com)",
+  "Description": "Converted for the FX Pro by FX Unleashed from Redadeg's SimHub dash \"LMP3 Ginetta G61\" (https://lmu-dashboards.com). Three pages in the tyre panel: tyre pressures, brake temperatures and tyre temperatures (bind Next / Previous page to a wheel button).",
+  "Version": "1.0.0",
+  "Games": [
+    "Le Mans Ultimate"
+  ],
+  "Cars": [],
+  "Tags": [
+    "lmu",
+    "lmp3",
+    "endurance"
+  ],
+  "License": "Converted work, rights with the original author",
+  "Source": "Redadeg's SimHub dash \"LMP3 Ginetta G61\", https://lmu-dashboards.com",
+  "Created": "2026-10-05",
+  "Updated": "2026-10-05",
+  "FormatVersion": 3,
+  "MinPlugin": "0.6.1",
+  "BytesStatic": 30346,
+  "BytesPerSecond": 2164,
+  "Sha256": "0d5a43a6415db0c1e5c26371ddb83b8e1181c1be3d14119e15212b9df15b6726"
+}

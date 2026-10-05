@@ -4,7 +4,7 @@
   "Name": "LMGT3 Ford Mustang GT3",
   "Author": "Redadeg (lmu-dashboards.com)",
   "Description": "Converted for the FX Pro by FX Unleashed from Redadeg's SimHub dash \"LMGT3 Ford Mustang GT3\" (https://lmu-dashboards.com).",
-  "Version": "1.0.0",
+  "Version": "1.1.0",
   "Games": [
     "Le Mans Ultimate"
   ],
@@ -17,10 +17,10 @@
   "License": "Converted work, rights with the original author",
   "Source": "Redadeg's SimHub dash \"LMGT3 Ford Mustang GT3\", https://lmu-dashboards.com",
   "Created": "2026-10-04",
-  "Updated": "2026-10-04",
-  "FormatVersion": 2,
-  "MinPlugin": "0.5.3",
-  "BytesStatic": 15171,
-  "BytesPerSecond": 1162,
-  "Sha256": "b4fefc81610f851a755e2d3d9c83cd7ee858a5168ba5afca1965e8d1f0e574d2"
+  "Updated": "2026-10-05",
+  "FormatVersion": 3,
+  "MinPlugin": "0.6.0",
+  "BytesStatic": 17212,
+  "BytesPerSecond": 2666,
+  "Sha256": "0df7c4c4fa97372f25c0f9abeaedc6ca904358806ea27f07aa80ef164dc4a061"
 }

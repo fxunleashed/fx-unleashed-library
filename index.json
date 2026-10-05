@@ -1,6 +1,6 @@
 {
  "Schema": 1,
- "Generated": "2026-10-05T17:18:59Z",
+ "Generated": "2026-10-05T22:21:14Z",
  "Items": [
   {
    "Id": "slipstream",
@@ -84,6 +84,35 @@
    "HasScript": true,
    "DashUrl": "dashes/lmgt3-mustang/dash.json",
    "PreviewUrl": "dashes/lmgt3-mustang/preview.png"
+  },
+  {
+   "Id": "lmgt3-aston-martin",
+   "Kind": "dash",
+   "Name": "LMGT3 Aston Martin Vantage AMR",
+   "Author": "Redadeg (lmu-dashboards.com)",
+   "Description": "Converted for the FX Pro by FX Unleashed from Redadeg's SimHub dash \"LMGT3 Aston Martin Vantage AMR GT3 Evo\" (https://lmu-dashboards.com). Three parts flip on their own, as in the original: energy / fuel (Next page 1), the lap times (Next page 2) and the tyres (Next page 3); Next page flips all three.",
+   "Version": "1.0.0",
+   "Games": [
+    "Le Mans Ultimate"
+   ],
+   "Cars": [],
+   "Tags": [
+    "lmu",
+    "lmgt3",
+    "endurance"
+   ],
+   "License": "Converted work, rights with the original author",
+   "Source": "Redadeg's SimHub dash \"LMGT3 Aston Martin Vantage AMR GT3 Evo\", https://lmu-dashboards.com",
+   "Created": "2026-10-05",
+   "Updated": "2026-10-05",
+   "FormatVersion": 4,
+   "MinPlugin": "0.7.0",
+   "BytesStatic": 143670,
+   "BytesPerSecond": 4649,
+   "Sha256": "56fd4de4cd72ac66a0c78e416d5f97a675c993ee8e5a99e10ad99378a44064bc",
+   "HasScript": true,
+   "DashUrl": "dashes/lmgt3-aston-martin/dash.json",
+   "PreviewUrl": "dashes/lmgt3-aston-martin/preview.png"
   },
   {
    "Id": "toyota-gr010-hybrid",

@@ -30,7 +30,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import jscheck  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-FORMAT = 3            # newest dash format the current plugin reads (DashDefinition.CurrentFormat)
+FORMAT = 4            # newest dash format the current plugin reads (DashDefinition.CurrentFormat)
 SCHEMA = 1            # index.json schema (LibraryIndex.CurrentSchema)
 MAX_DASH, MAX_PREVIEW, MAX_IMAGES = 1024 * 1024, 512 * 1024, 700 * 1024
 ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]{1,63}$")
@@ -155,7 +155,7 @@ def check_item(folder, kind, item_id):
 
 
 SCRIPTS_MIN_PLUGIN = "0.5.2"
-FORMAT_MIN_PLUGIN = {3: "0.6.0"}   # dash format -> the first plugin that reads it (3: pages)
+FORMAT_MIN_PLUGIN = {3: "0.6.0", 4: "0.7.0"}   # dash format -> the first plugin that reads it (3: pages, 4: more sets of pages)
 
 
 def at_least(version, minimum):

@@ -1,7 +1,37 @@
 {
  "Schema": 1,
- "Generated": "2026-10-05T22:21:14Z",
+ "Generated": "2026-10-06T07:15:34Z",
  "Items": [
+  {
+   "Id": "toyota-gr010-hybrid",
+   "Kind": "dash",
+   "Name": "Toyota GR010 Hybrid",
+   "Author": "Redadeg (lmu-dashboards.com)",
+   "Description": "Converted for the FX Pro by FX Unleashed from Redadeg's SimHub dash \"Toyota GR010 Hybrid\" (https://lmu-dashboards.com). Two pages in the bottom bar, as in the original: the anti-roll bars, and migration / regen (bind Next / Previous page to a wheel button).",
+   "Version": "1.1.0",
+   "Games": [
+    "Le Mans Ultimate"
+   ],
+   "Cars": [],
+   "Tags": [
+    "lmu",
+    "hypercar",
+    "hybrid",
+    "endurance"
+   ],
+   "License": "Converted work, rights with the original author",
+   "Source": "Redadeg's SimHub dash \"Toyota GR010 Hybrid\", https://lmu-dashboards.com",
+   "Created": "2026-10-03",
+   "Updated": "2026-10-06",
+   "FormatVersion": 3,
+   "MinPlugin": "0.6.0",
+   "BytesStatic": 55305,
+   "BytesPerSecond": 3539,
+   "Sha256": "ab46fb68902549a8190d09b1f85bf68aec3b39fecab97b3f7a3eb22c8d15813f",
+   "HasScript": true,
+   "DashUrl": "dashes/toyota-gr010-hybrid/dash.json",
+   "PreviewUrl": "dashes/toyota-gr010-hybrid/preview.png"
+  },
   {
    "Id": "slipstream",
    "Kind": "dash",
@@ -113,36 +143,6 @@
    "HasScript": true,
    "DashUrl": "dashes/lmgt3-aston-martin/dash.json",
    "PreviewUrl": "dashes/lmgt3-aston-martin/preview.png"
-  },
-  {
-   "Id": "toyota-gr010-hybrid",
-   "Kind": "dash",
-   "Name": "Toyota GR010 Hybrid",
-   "Author": "Redadeg (lmu-dashboards.com)",
-   "Description": "Converted for the FX Pro by FX Unleashed from Redadeg's SimHub dash \"Toyota GR010 Hybrid\" (https://lmu-dashboards.com).",
-   "Version": "1.0.0",
-   "Games": [
-    "Le Mans Ultimate"
-   ],
-   "Cars": [],
-   "Tags": [
-    "lmu",
-    "hypercar",
-    "hybrid",
-    "endurance"
-   ],
-   "License": "Converted work, rights with the original author",
-   "Source": "Redadeg's SimHub dash \"Toyota GR010 Hybrid\", https://lmu-dashboards.com",
-   "Created": "2026-10-03",
-   "Updated": "2026-10-03",
-   "FormatVersion": 2,
-   "MinPlugin": "0.5.2",
-   "BytesStatic": 37273,
-   "BytesPerSecond": 3530,
-   "Sha256": "4beceb7e91607fca10e89768f9295fc873ce09bb13f04e434d069a962d5c8088",
-   "HasScript": true,
-   "DashUrl": "dashes/toyota-gr010-hybrid/dash.json",
-   "PreviewUrl": "dashes/toyota-gr010-hybrid/preview.png"
   },
   {
    "Id": "lmgt3-mclaren-720s",

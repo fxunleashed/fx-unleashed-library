@@ -1,0 +1,27 @@
+{
+  "Id": "lmgt3-ferrari-296",
+  "Kind": "dash",
+  "Name": "LMGT3 Ferrari 296",
+  "Author": "Redadeg (lmu-dashboards.com)",
+  "Description": "Converted for the FX Pro by FX Unleashed from Redadeg's SimHub dash \"LMGT3 Ferrari 296\" (https://lmu-dashboards.com). Parts flip on their own, as in the original: the tyres, pressures or temperatures (Next page 1); the lap time panel: last lap, lap time, predicted, overall best, personal best (Next page 2); the two energy-low warnings are put away with Next page 3 and 4. Runs best with the screen's RAM drive (Wheel tab).",
+  "Version": "1.0.0",
+  "Games": [
+    "Le Mans Ultimate"
+  ],
+  "Cars": [],
+  "Tags": [
+    "lmu",
+    "lmgt3",
+    "endurance",
+    "ram-drive"
+  ],
+  "License": "Converted work, rights with the original author",
+  "Source": "Redadeg's SimHub dash \"LMGT3 Ferrari 296\", https://lmu-dashboards.com",
+  "Created": "2026-10-07",
+  "Updated": "2026-10-07",
+  "FormatVersion": 4,
+  "MinPlugin": "0.7.0",
+  "BytesStatic": 95499,
+  "BytesPerSecond": 4956,
+  "Sha256": "87894e53aac1946b78723511b62a754c9e8502dcbb71826c1d0db47446c62427"
+}

@@ -1,0 +1,26 @@
+{
+  "Id": "aim-mychron5-2t",
+  "Kind": "dash",
+  "Name": "AiM MyChron5 2T",
+  "Author": "Chips",
+  "Description": "The LCD of the AiM MyChron5 2T from iRacing's Formula Vee (SimHub dash by Chips), without the device around it. Pages: blue, red, orange and green backlight.",
+  "Version": "1.0.0",
+  "Games": [
+    "iRacing"
+  ],
+  "Cars": [],
+  "Tags": [
+    "iracing",
+    "formula-vee",
+    "aim"
+  ],
+  "License": "Converted work, rights with the original author",
+  "Source": "SimHub dash \"AIM MyChron5 2T\" by Chips",
+  "Created": "2026-10-07",
+  "Updated": "2026-10-07",
+  "FormatVersion": 3,
+  "MinPlugin": "0.6.0",
+  "BytesStatic": 0,
+  "BytesPerSecond": 1365,
+  "Sha256": "9c77f63dba7916f96707f68fe8a8ada881cfd8391a9c5f534a0d447cbd125f7d"
+}

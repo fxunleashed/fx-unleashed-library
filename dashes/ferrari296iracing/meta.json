@@ -1,0 +1,29 @@
+{
+  "Id": "ferrari296iracing",
+  "Kind": "dash",
+  "Name": "Ferrari 296 GT3 - iRacing v0.1",
+  "Author": "ScreaM",
+  "Description": "Replica of the iRacing Ferrari 296 GT3 dashboard",
+  "Version": "1.0.0",
+  "Games": [
+    "iRacing"
+  ],
+  "Cars": [
+    "Ferrari 296 GT3"
+  ],
+  "Tags": [
+    "Ferrari",
+    "296",
+    "GT3"
+  ],
+  "License": "CC-BY-4.0",
+  "Source": "Imported from a file",
+  "Permission": "My own original work",
+  "Created": "2026-10-07",
+  "Updated": "2026-10-07",
+  "FormatVersion": 3,
+  "MinPlugin": "0.3.0-beta.1",
+  "BytesStatic": 43534,
+  "BytesPerSecond": 5559,
+  "Sha256": "fd789e7f6d293d46a5245e03284f628a3cd31ffe3081bc9d9f2de5e02742ce72"
+}

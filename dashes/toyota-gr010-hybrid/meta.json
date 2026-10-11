@@ -4,7 +4,7 @@
   "Name": "Toyota GR010 Hybrid",
   "Author": "Redadeg (lmu-dashboards.com)",
   "Description": "Converted for the FX Pro by FX Unleashed from Redadeg's SimHub dash \"Toyota GR010 Hybrid\" (https://lmu-dashboards.com). Two pages in the bottom bar, as in the original: the anti-roll bars, and migration / regen (bind Next / Previous page to a wheel button).",
-  "Version": "1.1.0",
+  "Version": "1.2.0",
   "Games": [
     "Le Mans Ultimate"
   ],
@@ -18,10 +18,10 @@
   "License": "Converted work, rights with the original author",
   "Source": "Redadeg's SimHub dash \"Toyota GR010 Hybrid\", https://lmu-dashboards.com",
   "Created": "2026-10-03",
-  "Updated": "2026-10-06",
+  "Updated": "2026-10-10",
   "FormatVersion": 3,
   "MinPlugin": "0.6.0",
   "BytesStatic": 55305,
   "BytesPerSecond": 3539,
-  "Sha256": "ab46fb68902549a8190d09b1f85bf68aec3b39fecab97b3f7a3eb22c8d15813f"
+  "Sha256": "de79185a90cd1ff67f51f82f00691794767596c305ccdfda43be26f76c2ce1c3"
 }

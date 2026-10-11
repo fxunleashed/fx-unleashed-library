@@ -1,0 +1,27 @@
+{
+  "Id": "lmgt3-porsche-911-gt3-r",
+  "Kind": "dash",
+  "Name": "LMGT3 Porsche 911 GT3 R",
+  "Author": "Redadeg (lmu-dashboards.com)",
+  "Description": "Converted for the FX Pro by N.P from Redadeg's SimHub dash \"LMGT3 Porsche 911 GT3 R - standard size DDU\" (https://lmu-dashboards.com). Three pages (Next page 1): race, race with the virtual energy bar, qualifying with the delta bar. Pop-ups for TC, ABS, engine map and brake bias changes, the pit limiter and pit stop, the race start, a lap summary per session, and alarms for low energy and a flat tyre (put away with Next page 2 and 3). Runs best with the screen's RAM drive (Wheel tab).",
+  "Version": "1.0.0",
+  "Games": [
+    "Le Mans Ultimate"
+  ],
+  "Cars": [],
+  "Tags": [
+    "lmu",
+    "lmgt3",
+    "endurance",
+    "ram-drive"
+  ],
+  "License": "Converted work, rights with the original author",
+  "Source": "Redadeg's SimHub dash \"LMGT3 Porsche 911 GT3 R - standard size DDU\", https://lmu-dashboards.com",
+  "Created": "2026-10-11",
+  "Updated": "2026-10-11",
+  "FormatVersion": 4,
+  "MinPlugin": "0.7.0",
+  "BytesStatic": 27749,
+  "BytesPerSecond": 2274,
+  "Sha256": "2e5af6594690e6dbd3f8bfb84bcf489611ce38eaad670abd8263c0ad4bd75a03"
+}

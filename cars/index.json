@@ -8,6 +8,14 @@
    "simhubGame": "Automobilista2",
    "gameVersion": "1.6.9.96",
    "updated": "2026-10-03T01:45:45+00:00"
+  },
+  "iracing": {
+   "file": "cars/iracing.json",
+   "sha256": "d01d3dfebd6eda1c5b11091c30b553f346b738edff8181344ab0bc4d289eaa53",
+   "count": 187,
+   "simhubGame": "IRacing",
+   "gameVersion": "2026.10.01.01",
+   "updated": "2026-10-14T04:25:05+00:00"
   }
  }
 }

@@ -1,16 +1,18 @@
 {
   "Id": "lmgt3-mercedes-amg-gt3",
   "Kind": "dash",
-  "Name": "LMGT3 Mercedes AMG GT3",
+  "Name": "Mercedes AMG GT3 (LMU + iRacing)",
   "Author": "Redadeg (lmu-dashboards.com)",
-  "Description": "Converted for the FX Pro by FX Unleashed from Redadeg's SimHub dash \"LMGT3 Mercedes AMG GT3\" (https://lmu-dashboards.com). Parts flip on their own, as in the original: the lap time box (lap time, last lap, predicted, best: Next page 1), the tyres over the left boxes (pressures and temperatures, brakes: Next page 2) and the flag bars at the sides (Next page 3). Runs best with the screen's RAM drive (Wheel tab).",
-  "Version": "1.0.0",
+  "Description": "Converted for the FX Pro by FX Unleashed from Redadeg's SimHub dash \"LMGT3 Mercedes AMG GT3\" (https://lmu-dashboards.com). One dash for Le Mans Ultimate and iRacing: it follows the game SimHub reports (iRacing: T WATER, V BATT, T OIL and T GEAR boxes, TC2 / TC3, track wetness, headlight flash). Parts flip on their own, as in the original: the lap time box (lap time, last lap, predicted, best: Next page 1), the tyres over the left boxes (pressures and temperatures, brakes: Next page 2) and the flag bars at the sides (Next page 3). Runs best with the screen's RAM drive (Wheel tab).",
+  "Version": "1.1.0",
   "Games": [
-    "Le Mans Ultimate"
+    "Le Mans Ultimate",
+    "iRacing"
   ],
   "Cars": [],
   "Tags": [
     "lmu",
+    "iracing",
     "lmgt3",
     "endurance",
     "ram-drive"
@@ -18,10 +20,10 @@
   "License": "Converted work, rights with the original author",
   "Source": "Redadeg's SimHub dash \"LMGT3 Mercedes AMG GT3\", https://lmu-dashboards.com",
   "Created": "2026-10-07",
-  "Updated": "2026-10-07",
+  "Updated": "2026-10-18",
   "FormatVersion": 4,
   "MinPlugin": "0.7.0",
-  "BytesStatic": 29820,
-  "BytesPerSecond": 3110,
-  "Sha256": "748815119d90500511f1b33e931516df60f03a90788d154a66e174967df8d239"
+  "BytesStatic": 26106,
+  "BytesPerSecond": 3088,
+  "Sha256": "47ebf663bc3e941ca61149e0f01dc68e0c9326008858156f900f7346b7bfb3e9"
 }

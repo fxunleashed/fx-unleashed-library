@@ -1,6 +1,6 @@
 {
  "Schema": 1,
- "Generated": "2026-10-18T23:26:25Z",
+ "Generated": "2026-10-18T23:41:31Z",
  "Items": [
   {
    "Id": "lmgt3-mercedes-amg-gt3",
@@ -8,7 +8,7 @@
    "Name": "Mercedes AMG GT3 (LMU + iRacing)",
    "Author": "Redadeg (lmu-dashboards.com)",
    "Description": "Converted for the FX Pro by FX Unleashed from Redadeg's SimHub dash \"LMGT3 Mercedes AMG GT3\" (https://lmu-dashboards.com). One dash for Le Mans Ultimate and iRacing: it follows the game SimHub reports (iRacing: T WATER, V BATT, T OIL and T GEAR boxes, TC2 / TC3, track wetness, headlight flash). Parts flip on their own, as in the original: the lap time box (lap time, last lap, predicted, best: Next page 1), the tyres over the left boxes (pressures and temperatures, brakes: Next page 2) and the flag bars at the sides (Next page 3). Runs best with the screen's RAM drive (Wheel tab).",
-   "Version": "1.1.0",
+   "Version": "1.1.1",
    "Games": [
     "Le Mans Ultimate",
     "iRacing"
@@ -29,7 +29,7 @@
    "MinPlugin": "0.7.0",
    "BytesStatic": 26106,
    "BytesPerSecond": 3088,
-   "Sha256": "47ebf663bc3e941ca61149e0f01dc68e0c9326008858156f900f7346b7bfb3e9",
+   "Sha256": "4669d94b4fec4f32e817beef4a92414594a85ef603a74b055ab41563d55644ef",
    "HasScript": true,
    "DashUrl": "dashes/lmgt3-mercedes-amg-gt3/dash.json",
    "PreviewUrl": "dashes/lmgt3-mercedes-amg-gt3/preview.png"
